@@ -1,0 +1,116 @@
+<!-- This layout is setup for NHS.UK pages -->
+
+<!-- Extends the layout from /app/views/layouts/layout.html -->
+{% extends "layouts/layout.html" %}
+
+<!-- Set the page title inside this block -->
+{% block pageTitle %}
+  NHS.UK page layout - NHS.UK prototype kit
+{% endblock %}
+
+<!-- Header goes inside this block -->
+{% block header %}
+  {{ header({
+      "showNav": "true",
+      "showSearch": "true",
+      "primaryLinks": [
+        {
+          "url"  : "/design-system/patterns",
+          "label" : "Patterns"
+        },
+        {
+          'url' : '/design-system/pages',
+          'label' : 'Pages'
+        },
+        {
+          'url' : '/design-system/components',
+          'label' : 'Components'
+        },
+        {
+          'url'  : '/design-system/styles',
+          'label' : 'Styles'
+        },
+        {
+          'url'  : '/design-system/resources',
+          'label' : 'Resources'
+        },
+        {
+          'url' : '/design-system/community',
+          'label' : 'Community'
+        }
+      ]
+    })
+  }}
+{% endblock %}
+
+<!-- Breadcrumb goes inside this block -->
+<!--
+{% block beforeContent %}
+  {{ breadcrumb({
+    text: "Home",
+    href: "/"
+  }) }}
+{% endblock %}
+-->
+
+<!-- Footer goes inside this block -->
+{% block footer %}
+<footer role="contentinfo" data-gtm-vis-recent-on-screen-9645810_22="1074" data-gtm-vis-first-on-screen-9645810_22="1074" data-gtm-vis-total-visible-time-9645810_22="100" data-gtm-vis-has-fired-9645810_22="1">
+  <div class="nhsuk-footer" id="nhsuk-footer">
+    <div class="nhsuk-width-container">
+     <h2 class="bsa-footer__heading">Help</h2>
+<ul class="bsa-footer__list">
+  <li class="bsa-footer__list-item">Email: <a class="bsa-footer__link" href="mailto:#">add your email</a></li>
+  <li class="bsa-footer__list-item">Phone: 0300 330 1343</li>
+  <li class="bsa-footer__list-item"><span class="visually-hidden">Opening times: </span>8am to 6pm Monday to Friday, 9am to 3pm on Saturday</li>
+</ul>
+
+<hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+     
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <ul class="nhsuk-footer__list">
+        <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="/service-manual/accessibility-statement">Accessibility</a></li>
+        <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="/service-manual/privacy">Privacy policy</a></li>
+        <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="/service-manual/cookies">Cookies</a></li>
+        <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="/service-manual/terms-and-conditions">Terms and conditions</a></li>
+        <li class="nhsuk-footer__list-item">Built by <a class="nhsuk-footer__list-item-link" href="https://www.nhsbsa.nhs.uk/">NHS Business Services Authority</a></li>
+
+      </ul>
+
+                 
+    
+      
+    </div>
+    
+  </div>
+  
+  <div class="ogl-footer">
+    <div class="nhsuk-width-container">
+
+      <p class="ogl-text">
+        <svg xmlns="http://www.w3.org/2000/svg" height="17" width="41" role="presentation" focusable="false" viewBox="0 0 483.2 195.7">
+          <path fill="currentColor" d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"></path>
+        </svg>
+        All content is available under the <a class="nhsuk-footer__list-item-link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated.
+        </p>
+        
+ 
+      
+      
+      
+      
+      
+    </div>
+  </div>
+
+
+
+</footer>
+
+  
+{% endblock %}
+
+
+
+
+

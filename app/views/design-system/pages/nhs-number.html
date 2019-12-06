@@ -1,0 +1,118 @@
+{% extends 'layouts/layout-bsa-design-system.html' %}
+
+{% block pageTitle %}
+Start page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+
+<!--
+{{ breadcrumb({
+      href: "/diat/design-system-home",
+      text: "Design System"
+  }) }}
+-->
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+        <div class="article-section-nav-outer-wrapper">
+            <div id="sticky-nav" class="" style="">
+                <div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
+                    <div class="article-section-nav-wrapper">
+                        <div class="article-section-nav">
+                            <nav id="toc" class="js-toc-list toc__list">
+                                <ol class="article-section-nav__list">
+                                    <li>
+                                        <a href="name">name</a>
+                                    </li>
+                                    <li>
+                                        <a href="address">address</a>
+                                    </li>
+                                    <li>
+                                        <a href="date-of-birth">dob</a>
+                                    </li>
+                                    <li>
+                                        <a href="nhs-number">nhs number</a>
+                                    </li>
+                                    <li>
+                                        <a href="start-page">start page</a>
+                                    </li>
+                                    <li>
+                                        <a href="end-page">end page/ sort of done</a>
+                                    </li>
+                                    <li>
+                                        <a href="feedback">feedback</a>
+                                    </li>
+                                    <li>
+                                        <a href="error-messages">error messages</a>
+                                    </li>
+                                    <li>
+                                        <a href="task-list">task list pattern</a>
+                                    </li>
+                                    <li>
+                                        <a href="check-answers">Check answers</a>
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nhsuk-grid-column-two-thirds">
+    <span class="nhsuk-caption-xl">Patterns</span>
+      <h1 class="heading-section">NHS number</h1>
+      <p class="nhsuk-body-l">A default view of a case in a caseworking system.</p>
+    
+<h3 class="nhsuk-u-visually-hidden">NHS number page example- Do you know it?</h3>
+       <div class="example example-images confirmation details-margin-btm">
+   
+     
+        <form action="#" method="get">
+
+            <div class="nhsuk-form-group">
+
+                <fieldset class="nhsuk-fieldset" aria-describedby="gov-hint">
+                    <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xl">
+                        <h1 class="nhsuk-fieldset__heading">
+                            Do you know your NHS number?
+                        </h1>
+                    </legend>
+
+                    <span class="nhsuk-hint" id="gov-hint">
+                        <p> Your NHS number is a 10 digit number, for example 485 777 3456 </p>
+                        <p>You can find your NHS number on any letter sent to you by the NHS, on your prescriptions or by logging in to your GP practice online service</p>
+                    </span>
+
+                    <div class="nhsuk-radios">
+                        <div class="nhsuk-radios__item">
+                            <input class="nhsuk-radios__input" id="gov-1" name="gov" type="radio" value="yes">
+                            <label class="nhsuk-label nhsuk-radios__label" for="gov-1">
+                                Yes, I know my NHS number
+                            </label>
+                        </div>
+                        <div class="nhsuk-radios__item">
+                            <input class="nhsuk-radios__input" id="gov-2" name="gov" type="radio" value="no">
+                            <label class="nhsuk-label nhsuk-radios__label" for="gov-2">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+            </div>
+
+            <input type="submit" class="nhsuk-button" value="Continue">
+
+        </form>
+           </div>
+    </div>
+
+    {% endblock %}

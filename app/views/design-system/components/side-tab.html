@@ -1,0 +1,65 @@
+{% extends 'layouts/layout-bsa-design-system.html' %}
+{% set active = "components" %}
+{% set activesub = "side" %}
+
+{% block pageTitle %}
+Back - NHSBSA design system
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-grid-row">
+    {% include "includes/left-pane__components.html" %}
+   
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <span class="nhsuk-caption-xl">Components</span>
+      <h1 class="heading-section">Side tab</h1>
+      <p class="nhsuk-body-l">Switching between views of grouped content; hiding content that doesn&rsquo;t always need to be visible.</p>
+
+      <div class="example example-images">
+        <div class="nhsuk-grid-row">
+          {% include "includes/components/side-tab.html" %}
+        </div>
+      </div>
+      <details class="code-details">
+        <summary>HTML</summary>
+        <pre><code class="html">{% filter escape %}{% include "includes/components/side-tab.html" %}{% endfilter %}</code></pre>
+      </details>
+      <details class="code-details">
+        <summary>CSS</summary>
+        <pre><code class="css">{% filter escape %}{% include "includes/css/tab.scss" %}{% endfilter %}</code></pre>
+      </details>
+      <details class="code-details details-margin-btm">
+        <summary>JavaScript</summary>
+        <pre><code class="javascript">{% filter escape %}{% include "includes/css/tab.js" %}{% endfilter %}</code></pre>
+      </details>
+
+      <h2 class="nhsuk-heading-m">Interaction principles</h2>
+      <p>Only one tab can be active at a time.</p>
+      <p>The active tab should be distinguishable from the inactive, with maximum contrast ratio.</p>
+      <p>Inactive tabs should have a hover state that is distinguisable with minimum contrast ratio.</p>
+      <p>Focused tabs should be consistent with other focus states and distinguisable from active, inactive and hover states.</p>
+      <p><a href="https://inclusive-components.design/tabbed-interfaces/">Inclusive components</a> has some really good guidance on tabs if you want to read more.</p>
+
+      <h2 class="nhsuk-heading-m">Content principles</h2>
+      <p>The label should reflect the thing you need do with the content of that tab, not a description of what it is.</p>
+
+      <h2 class="nhsuk-heading-m">Accessibility principles</h2>
+      <p>The active tab should be labelled as active in the code.</p>
+      <p>Only active tab content should be readable.</p>
+
+      <h2 class="nhsuk-heading-m">User research</h2>
+      <p>Application platform uses vertical tabs for long lists. When combined with a typeahead search, the pattern performs very well when users don't know the contents of the list.</p>
+
+      <h2 class="nhsuk-heading-m">Services using this pattern</h2>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>Application platform</li>
+      </ul>
+
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}

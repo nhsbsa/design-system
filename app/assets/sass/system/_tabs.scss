@@ -1,0 +1,28 @@
+.nhsuk-tabs {
+  margin-top: 0;
+  padding-top: 0;
+  background-color: #FFF;
+}
+
+.nhsuk-tabs__list {
+  border-right: 1px solid $color_nhsuk-grey-2;
+
+  .nhsuk-tabs__tab--selected {
+    margin-top: -1px;
+    font-weight: bold;
+  }
+
+  .nhsuk-tabs__tab {
+    padding-top: 10px;
+  }
+}
+
+
+
+.nhsuk-tabs__panel {
+  background-color: #FFF;
+
+  pre {
+    margin: 0;
+  }
+}

@@ -1,0 +1,37 @@
+<h2 class="nhsuk-heading-m" style="margin:0 0 20px 0;">Filter results</h2>
+
+<form>
+  <fieldset class="nhsuk-fieldset">
+    <legend class="nhsuk-fieldset__heading" style="margin-bottom:15px;">
+      <h3 class="nhsuk-heading-s">Find applicant by:</h3>
+    </legend>
+    <div class="multiple-choice--hod nhsuk-radios nhsuk-radios--conditional" data-module="radios">
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="how-contacted-conditional-1" name="find-applicant" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional-1">
+        <label class="nhsuk-label nhsuk-radios__label" for="how-contacted-conditional-1">
+          Email
+        </label>
+      </div>
+      <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-1">
+        <div class="nhsuk-form-group">
+          <label class="nhsuk-label" for="contact-by-email">
+            Email address
+          </label>
+          <input class="nhsuk-input nhsuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email">
+        </div>
+      </div>
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="18-30" type="radio" name="find-applicant" value="Age: 18 - 30">
+        <label class="nhsuk-label nhsuk-radios__label" for="18-30">18 - 30 years old</label>
+      </div>
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="31-55" type="radio" name="find-applicant" value="Age: 31 - 55">
+        <label class="nhsuk-label nhsuk-radios__label" for="31-55">31 - 55 years old</label>
+      </div>
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="55" type="radio" name="find-applicant" value="Age: over 55">
+        <label class="nhsuk-label nhsuk-radios__label" for="55">Over 55 years old</label>
+      </div>
+    </div>
+  </fieldset>
+</form>

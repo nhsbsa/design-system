@@ -1,0 +1,72 @@
+{% extends 'layouts/layout-bsa-design-system.html' %}
+
+{% block pageTitle %}
+Start page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+
+<!--
+  {{ breadcrumb({
+      href: "/diat/design-system-home",
+      text: "Design System"
+  }) }}
+-->
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+        <div class="article-section-nav-outer-wrapper">
+            <div id="sticky-nav" class="" style="">
+                <div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
+                    <div class="article-section-nav-wrapper">
+                        <div class="article-section-nav">
+                            <nav id="toc" class="js-toc-list toc__list">
+                                <ol class="article-section-nav__list">
+                                    <li>
+                                        <a href="1">1</a>
+                                    </li>
+                                    <li>
+                                        <a href="2">2</a>
+                                    </li>
+                                    <li>
+                                        <a href="3">3</a>
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nhsuk-grid-column-two-thirds">
+       <span class="nhsuk-caption-xl">Styles</span>
+        <h1 class="nhsuk-heading-xl">One </h1>
+
+      <h2>Discription</h2>
+        <h2>Why it's needed</h2>
+        <h2>Services that use it</h2>
+        <h2>Research on it</h2>
+      
+    </div>
+
+    </div>
+
+    <!--
+        /**
+         * sticky-sidebar - A JavaScript plugin for making smart and high performance.
+         * @version v3.3.1
+         * @link https://github.com/abouolia/sticky-sidebar
+         * @author Ahmed Bouhuolia
+         * @license The MIT License (MIT)
+         **/
+-->
+
+</div>
+{% endblock %}

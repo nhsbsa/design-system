@@ -1,0 +1,192 @@
+.nhsbsa-timeline {
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.nhsbsa-timeline:before {
+  background-color: #1d70b8;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 10px;
+  width: 5px;
+}
+
+.nhsbsa-timeline--full {
+  margin-bottom: 0;
+}
+
+.nhsbsa-timeline--full:before {
+  height: calc(100% - 75px);
+}
+
+.nhsbsa-timeline__item {
+  padding-bottom: 30px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.nhsbsa-timeline__item:before {
+  background-color: #1d70b8;
+  content: "";
+  height: 5px;
+  left: 0;
+  position: absolute;
+  top: 10px;
+  width: 15px;
+}
+
+.nhsbsa-timeline__title {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25;
+  display: inline;
+}
+
+@media print {
+  .nhsbsa-timeline__title {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .nhsbsa-timeline__title {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .nhsbsa-timeline__title {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+.nhsbsa-timeline__by {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #6f777b;
+  margin: 0;
+}
+
+@media print {
+  .nhsbsa-timeline__by {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .nhsbsa-timeline__by {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .nhsbsa-timeline__by {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+.nhsbsa-timeline__date {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.14286;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+@media print {
+  .nhsbsa-timeline__date {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .nhsbsa-timeline__date {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+}
+
+@media print {
+  .nhsbsa-timeline__date {
+    font-size: 14pt;
+    line-height: 1.2;
+  }
+}
+
+.nhsbsa-timeline__description {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.14286;
+  margin-top: 20px;
+}
+
+@media print {
+  .nhsbsa-timeline__description {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .nhsbsa-timeline__description {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+}
+
+@media print {
+  .nhsbsa-timeline__description {
+    font-size: 14pt;
+    line-height: 1.2;
+  }
+}
+
+.nhsbsa-timeline__documents {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.nhsbsa-timeline__document-item {
+  margin-bottom: 5px;
+}
+
+.nhsbsa-timeline__document-item:last-child {
+  margin-bottom: 0;
+}
+
+.nhsbsa-timeline__document-link {
+  background-image: url(/images/icon-document.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 16px;
+  background-position: 0 50%;
+  padding-left: 25px;
+  font-size: 1rem;
+}
+
+.nhsbsa-timeline__document-link:focus {
+  color: #0b0c0c;
+}

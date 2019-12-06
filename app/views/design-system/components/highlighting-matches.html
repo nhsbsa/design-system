@@ -1,0 +1,51 @@
+{% extends 'layouts/layout-bsa-design-system.html' %}
+{% set active = "components" %}
+{% set activesub = "highlights" %}
+
+{% block pageTitle %}
+Back - NHSBSA design system
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-grid-row">
+    {% include "includes/left-pane__components.html" %}
+   
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <span class="nhsuk-caption-xl">Components</span>
+      <h1 class="heading-section">Highlighted search matches</h1>
+      <p class="nhsuk-body-l">Highlighting helps users identify matching data.</p>
+
+      <h2 class="nhsuk-visually-hidden" id="example-component">Example highlighting component</h2>
+      <div class="example example-images">
+        <div class="nhsuk-grid-row">
+          {% include "includes/components/highlighting.html" %}
+        </div>
+      </div>
+      <details class="code-details">
+        <summary>HTML</summary>
+        <pre><code class="html">{% filter escape %}{% include "includes/components/highlighting.html" %}{% endfilter %}</code></pre>
+      </details>
+      <details class="code-details details-margin-btm">
+        <summary>CSS</summary>
+        <pre><code class="css">{% filter escape %}{% include "includes/css/highlights.css" %}{% endfilter %}</code></pre>
+      </details>
+
+      <h2 class="nhsuk-heading-m">When to use this component</h2>
+      <p>Highlighting is typically used in search or when comparing data sets.</p>
+
+      <h2 class="nhsuk-heading-m">How to use this component</h2>
+      <p>Highlighting should not reduce colour contrast so much that it fails WCAG level AA. Highlighting should be clear but not distract from the content on the page.</p>
+
+      <h2 class="nhsuk-heading-m">Services using this pattern</h2>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>Passport caseworking</li>
+        <li>Application platform</li>
+      </ul>
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends 'layouts/layout-bsa-design-system.html' %}
+{% set active = "components" %}
+{% set activesub = "subnav" %}
+
+{% block pageTitle %}
+Back - NHSBSA design system
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-grid-row">
+    {% include "includes/left-pane__components.html" %}
+   
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <span class="nhsuk-caption-xl">Components</span>
+      <h1 class="heading-section">Sub-navigation</h1>
+      <p class="nhsuk-body-l">Navigation items that appear below the Home Office header.</p>
+
+      <div class="example example-images" id="example-component">
+        <div class="nhsuk-grid-row">
+          {% include "includes/components/navigation.html" %}
+        </div>
+      </div>
+      <details class="code-details">
+        <summary>HTML</summary>
+        <pre><code class="html">{% filter escape %}{% include "includes/components/navigation.html" %}{% endfilter %}</code></pre>
+      </details>
+      <details class="code-details">
+        <summary>CSS</summary>
+        <pre><code class="css">{% filter escape %}{% include "includes/css/nav.scss" %}{% endfilter %}</code></pre>
+      </details>
+      <details class="code-details details-margin-btm">
+        <summary>JavaScript</summary>
+        <pre><code class="javascript">{% filter escape %}{% include "includes/css/nav.js" %}{% endfilter %}</code></pre>
+      </details>
+
+      <h2 class="nhsuk-heading-m">Interaction principles</h2>
+      <p>Only one nav item can be active at a time and an active item should be distinguishable from inactive items.</p>
+      <p>Inactive items should have a hover state.</p>
+      <p>Focused nav items should be consistent with other focus states.</p>
+
+      <h2 class="nhsuk-heading-m">Content principles</h2>
+      <p>The label should reflect the thing that the user will do at the destination, not describe the destination.</p>
+
+      <h2 class="nhsuk-heading-m">Accessibility principles</h2>
+      <p>The active nav item should be labelled as active in the code.</p>
+      <p>Colour should not be the only way to distinguish active from inactive nav items.</p>
+
+      <h2 class="nhsuk-heading-m">Services using this pattern</h2>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>Design system</li>
+      </ul>
+
+      <h2 class="nhsuk-heading-m">Related</h2>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li><a href="/styles/header">Service header</a></li>
+      </ul>
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}

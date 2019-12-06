@@ -1,0 +1,21 @@
+  <nav class="app-navigation nhsuk-clearfix">
+
+      <ul class="app-navigation__list">
+        <li{% if active == "patterns" %} class="current-page"{% endif %}>
+          <a class="nhsuk-link" href="/patterns">Patterns</a>
+        </li>
+        <li{% if active == "components" %} class="current-page"{% endif %}>
+          <a class="nhsuk-link" href="/components">Components</a>
+        </li>
+        <li{% if active == "styles" %} class="current-page"{% endif %}>
+          <a class="nhsuk-link" href="/styles">Styles</a>
+        </li>
+        <li{% if active == "resources" %} class="current-page"{% endif %}>
+          <a class="nhsuk-link" href="/resources">Resources</a>
+        </li>
+        <li{% if active == "community" %} class="current-page"{% endif %}>
+          <a class="nhsuk-link" href="/community">Community</a>
+        </li>
+      </ul>
+
+  </nav>

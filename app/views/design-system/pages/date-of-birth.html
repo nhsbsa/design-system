@@ -1,0 +1,81 @@
+{% extends 'layouts/layout-bsa-design-system.html' %}
+
+{% block pageTitle %}
+Start page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+
+<!--
+{{ breadcrumb({
+      href: "/diat/design-system-home",
+      text: "Design System"
+  }) }}
+-->
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+        <div class="article-section-nav-outer-wrapper">
+            <div id="sticky-nav" class="" style="">
+                <div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
+                    <div class="article-section-nav-wrapper">
+                        <div class="article-section-nav">
+                            <nav id="toc" class="js-toc-list toc__list">
+                                <ol class="article-section-nav__list">
+                                    <li>
+                                        <a href="name">name</a>
+                                    </li>
+                                    <li>
+                                        <a href="address">address</a>
+                                    </li>
+                                    <li>
+                                        <a href="date-of-birth">dob</a>
+                                    </li>
+                                    <li>
+                                        <a href="nhs-number">nhs number</a>
+                                    </li>
+                                    <li>
+                                        <a href="start-page">start page</a>
+                                    </li>
+                                    <li>
+                                        <a href="end-page">end page/ sort of done</a>
+                                    </li>
+                                    <li>
+                                        <a href="feedback">feedback</a>
+                                    </li>
+                                    <li>
+                                        <a href="error-messages">error messages</a>
+                                    </li>
+                                    <li>
+                                        <a href="task-list">task list pattern</a>
+                                    </li>
+                                    <li>
+                                        <a href="check-answers">Check answers</a>
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nhsuk-grid-column-two-thirds">
+        <h1>Pages</h1>
+
+        <p class="nhsuk-body-l">These pages are common across the NHSBSA. These can be used as templates to get you going.</p>
+        
+        <p>Sometimes a service may have a more complex need than the templates listed here, and we welcome any research on these, such as international and company addresses.</p>
+
+    </div>
+
+</div>
+
+{% endblock %}
+

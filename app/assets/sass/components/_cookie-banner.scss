@@ -1,0 +1,24 @@
+.app-cookie-banner {
+  @include nhsuk-font(16);
+  @include nhsuk-text-colour;
+
+  box-sizing: border-box;
+  width: 100%;
+
+  padding-top: nhsuk-spacing(3);
+  padding-right: nhsuk-spacing(3);
+  padding-bottom: nhsuk-spacing(3);
+  padding-left: nhsuk-spacing(3);
+  background-color: lighten(desaturate(nhsuk-colour("light-blue"), 8.46), 42.55);
+}
+
+.app-cookie-banner__message {
+  margin: 0;
+  @include nhsuk-width-container;
+}
+
+@include nhsuk-media-query($media-type: print) {
+  .app-cookie-banner {
+    display: none !important;
+  }
+}

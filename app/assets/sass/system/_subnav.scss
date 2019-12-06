@@ -1,0 +1,80 @@
+@include nhsuk-exports("app-subnav") {
+
+  .app-subnav {
+    padding: nhsuk-spacing(6) nhsuk-spacing(3) nhsuk-spacing(3) 42px;
+    @include nhsuk-font(16);
+
+    @include nhsuk-media-query($until: tablet) {
+      display: none;
+    }
+  }
+
+  .app-subnav__section {
+    margin: 0 0 nhsuk-spacing(4);
+    padding: 0;
+    list-style-type: none;
+
+    .app-subnav__section-item--current {
+      border-left-color: #005ea5;
+      font-weight: bold;
+    }
+  }
+
+  .app-subnav__link {
+    display: block;
+    padding: 8px nhsuk-spacing(6) 8px nhsuk-spacing(2);
+    border-left: 3px solid transparent;
+    text-decoration: none;
+
+    &:focus {
+      background: inherit;
+    }
+
+    &:hover,
+    &:active,
+    &:visited {
+      color: $nhsuk-link-colour;
+    }
+
+    &:hover {
+      border-left-color: $nhsuk-link-hover-colour;
+    }
+  }
+
+  .app-subnav__section-item--current .app-subnav__link {
+    border-left-color: $nhsuk-link-colour;
+    font-weight: bold;
+  }
+
+  .app-subnav__section--nested {
+    margin-bottom: 0;
+  }
+
+  .app-subnav__section--nested .app-subnav__link {
+    padding-left: nhsuk-spacing(4);
+    font-weight: 400;
+  }
+
+  .app-subnav__theme {
+    margin: 0;
+    padding: nhsuk-spacing(2) nhsuk-spacing(3);
+    color: nhsuk-colour("grey-1");
+    @include nhsuk-font(19);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .app-subnav {
+    padding: 20px 10px 15px 0;
+  }
+
+}
+
+@media (max-width: 640px) {
+
+  .app-subnav {
+    padding: 20px 10px 0 7px;
+  }
+
+}

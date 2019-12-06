@@ -1,0 +1,31 @@
+{% set users = [ { name: "Spider-Man" }, { name: "Captain Marvel" }, { name: "Hulk" }, { name: "Thor" }, { name: "Iron Man" }, { name: "Luke Cage" }, { name: "Black Widow" }, { name: "Daredevil" } ] %}
+<table class="table-clickable nhsuk-table">
+  <thead class="nhsuk-table__head">
+    <tr class="nhsuk-table__row">
+      <th class="nhsuk-table__header multiple-choice--hod">
+        <div class="nhsuk-checkboxes__item">
+          <input type="checkbox" class="nhsuk-checkboxes__input jsCheckboxAll" id="radio-all">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="radio-all">
+            &nbsp;
+          </label>
+        </div>
+      </th>
+      <th class="nhsuk-table__header">Name</th>
+    </tr>
+  </thead>
+  <tbody class="nhsuk-table__body">
+    {% for user in users | sort(attribute = 'name') %}
+      <tr class="nhsuk-table__row">
+        <td class="nhsuk-table__cell multiple-choice--hod">
+          <div class="nhsuk-checkboxes__item">
+            <input type="checkbox" class="nhsuk-checkboxes__input jsCheckbox" id="radio-{{ loop.index }}">
+            <label class="nhsuk-label nhsuk-checkboxes__label" for="radio-{{ loop.index }}">
+              &nbsp;
+            </label>
+          </div>
+        </td>
+        <td class="nhsuk-table__cell">{{ user.name }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>

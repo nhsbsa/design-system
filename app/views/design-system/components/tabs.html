@@ -1,0 +1,64 @@
+{% extends 'layouts/layout-bsa-design-system.html' %}
+{% set active = "components" %}
+{% set activesub = "tabs" %}
+
+{% block pageTitle %}
+Tabs - NHSBSA design system
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-grid-row">
+    {% include "includes/left-pane__components.html" %}
+   
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <span class="nhsuk-caption-xl">Components</span>
+      <h1 class="heading-section">Tabs</h1>
+      <p class="nhsuk-body-l">Show and hide related content.</p>
+
+
+      <h2 class="nhsuk-u-visually-hidden" id="example-component">Example checkbox component</h2>
+      <div class="example example-images">
+        <div class="nhsuk-grid-row">
+          {% include "includes/components/tabs.html" %}
+        </div>
+      </div>
+
+      
+      <details class="code-details">
+        <summary>HTML</summary>
+        <pre><code class="html">{% filter escape %}{% include "includes/components/tabs.html" %}{% endfilter %}</code></pre>
+      </details>
+      <details class="code-details details-margin-btm">
+        <summary>CSS</summary>
+        <pre><code class="css">{% filter escape %}{% include "includes/css/tab.scss" %}{% endfilter %}</code></pre>
+      </details>
+      
+      
+      <h2 class="nhsuk-heading-m">When to use</h2>
+      <p>Tabs don't test well on citizen facing services, so are usually reserved for agent facing services. Tabs are used to break down related content into more manageable chunks. Tabs should be only be used when you have a lot of related content on one page, and should only be used as a progressive enhancement to sections with headings. </p>
+
+      <h2 class="nhsuk-heading-m">When not to use</h2>
+      <p>Tabs should generally not be used on citizen facing services as research suggests the ‘one thing per page’ is more effective.</p>
+      <p>Tabs should not be used as a substitute for a navigation menu or a sub-navigation menu. They should not be used to link between different pages and URL's, or to link content together that is unrelated. </p>
+
+      <h2 class="nhsuk-heading-m">Services that use this</h2>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>Low Income Scheme Assess</li>
+        <li>Loss Recovery- Single User View</li>
+      </ul>
+           
+      <h2 class="nhsuk-heading-m">Research</h2>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>User type: Agents</li>
+        <li>Accessibility: Tested on JAWS, Dragon, Zoomtext and Read&Write</li>
+      </ul>
+
+    </div>
+</div>
+
+
+
+{% endblock %}
+

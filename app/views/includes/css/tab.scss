@@ -1,0 +1,110 @@
+visually-hidden,
+.visuallyhidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.tabs {
+  margin-bottom: 1.05263em;
+}
+
+.tabs-content {
+  clear: both;
+}
+
+@media (min-width: 641px) {
+  .tabs-content [role='tabpanel'] {
+    border-top: 1px solid #bfc1c3;
+  }
+}
+
+.tabs-content [role='tabpanel'] .tabs-panel-inner {
+  margin-top: 60px;
+}
+
+.tabs-content [aria-hidden='true'] {
+  display: none;
+}
+
+.tabs-panel-inner:focus {
+  border: 0;
+    outline: 5px solid #ffbf47;
+}
+
+.tabs-list[role='tablist'] {
+  border-top: 1px solid #bfc1c3;
+  margin: 0;
+}
+
+@media (min-width: 641px) {
+  .tabs-list[role='tablist'] {
+    border-top: 0 none;
+  }
+}
+
+.tabs-list[role='tablist'] li {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 16px;
+  line-height: 1.25;
+  border-bottom: 1px solid #bfc1c3;
+  margin: 0;
+}
+
+@media (min-width: 641px) {
+  .tabs-list[role='tablist'] li {
+    font-size: 19px;
+    line-height: 1.31579;
+  }
+}
+
+@media (min-width: 641px) {
+  .tabs-list[role='tablist'] li {
+    border-bottom: 0 none;
+    float: left;
+    margin: 0 0 -1px;
+    padding: 0;
+  }
+}
+
+.tabs-list[role='tablist'] li a {
+  background-color: #dee0e2;
+  display: block;
+  font-weight: bold;
+  padding: 0.47368em;
+  text-decoration: none;
+}
+
+@media (min-width: 641px) {
+  .tabs-list[role='tablist'] li a {
+    border: 0 none;
+    float: left;
+    margin: 0.26316em 0.26316em 0.26316em 0;
+    padding: 0.47368em 1em;
+    text-align: center;
+  }
+}
+
+.tabs-list[role='tablist'] li [aria-selected='true'] {
+  background-color: #fff;
+  color: #0b0c0c;
+  cursor: default;
+  text-decoration: none;
+}
+
+@media (min-width: 641px) {
+  .tabs-list[role='tablist'] li [aria-selected='true'] {
+    border: 1px solid #bfc1c3;
+    border-bottom: 1px solid transparent;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0.68421em 0.94737em 0.73684em;
+  }
+}

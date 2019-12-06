@@ -1,0 +1,79 @@
+{% extends 'layouts/layout-bsa-design-system.html' %}
+{% set active = "components" %}
+{% set activesub = "checkboxes" %}
+
+{% block pageTitle %}
+Back - NHSBSA design system
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-grid-row">
+    {% include "includes/left-pane__components.html" %}
+   
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <span class="nhsuk-caption-xl">Components</span>
+      <h1 class="heading-section">Checkboxes</h1>
+      <p class="nhsuk-body-l">A variation of <a href="https://design-system.service.gov.uk/components/checkboxes/">GOV.UK checkboxes</a> for higher density interfaces.</p>
+
+      <h2 class="nhsuk-visually-hidden" id="example-component">Example checkbox component</h2>
+      <div class="example example-images">
+        <div class="nhsuk-grid-row">
+          {% include "includes/components/checkboxes.html" %}
+        </div>
+      </div>
+      <details class="code-details">
+        <summary>HTML</summary>
+        <pre><code class="html">{% filter escape %}{% include "includes/components/checkboxes.html" %}{% endfilter %}</code></pre>
+      </details>
+      <details class="code-details details-margin-btm">
+        <summary>CSS</summary>
+        <pre><code class="css">{% filter escape %}{% include "includes/css/checkboxes.css" %}{% endfilter %}</code></pre>
+      </details>
+
+      <h2 class="nhsuk-heading-m" id="example-component">Checkbox with conditional reveal</h2>
+      <div class="example example-images">
+        <div class="nhsuk-grid-row">
+          {% include "includes/components/checkboxes-progressive.html" %}
+        </div>
+      </div>
+      <details class="code-details">
+        <summary>HTML</summary>
+        <pre><code class="html">{% filter escape %}{% include "includes/components/checkboxes-progressive.html" %}{% endfilter %}</code></pre>
+      </details>
+      <details class="code-details details-margin-btm">
+        <summary>CSS</summary>
+        <pre><code class="css">{% filter escape %}{% include "includes/css/checkboxes.css" %}{% endfilter %}</code></pre>
+      </details>
+
+      <h2 class="nhsuk-heading-m">When to use this component</h2>
+      <p>This component is a variation of the <a href="https://design-system.service.gov.uk/components/checkboxes/">GOVUK checkboxes</a>.</p>
+      <p>Use this component when the form is not the most important element on a page. Or when the size of the GOVUK radio buttons creates a false hierarchy of content.</p>
+      <p>A common use would be filtering search results.</p>
+
+      <h2 class="nhsuk-heading-m">When not to use this component</h2>
+      <p>Always start with the <a href="https://design-system.service.gov.uk/components/checkboxes/">GOVUK checkboxes</a>. Don't use this component as part of a 'one thing per page' pattern.</p>
+
+      <h2 class="nhsuk-heading-m">User research</h2>
+      <ul class="list">
+        <li>A number of services are using this pattern in the Home Office. From the research teams have done, no identified issues with the size or usability of the smaller checkboxes.</li>
+        <li>Component needs further research on mobile devices.</li>
+      </ul>
+
+      <h2 class="nhsuk-heading-m">Services using this pattern</h2>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>DAP</li>
+        <li>Resettlement services</li>
+        <li>General Aviation</li>
+        <li>ASRU</li>
+        <li>Application platform</li>
+        <li>Data services</li>
+      </ul>
+
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}

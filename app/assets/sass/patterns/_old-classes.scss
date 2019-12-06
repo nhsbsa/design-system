@@ -1,0 +1,115 @@
+// Typography
+
+p, .body-text		{ @extend .nhsuk-body; }
+a 					{ @extend .nhsuk-link; }
+hr 					{ @extend .nhsuk-section-break, .nhsuk-section-break--visible; }
+.heading-xlarge 	{ @extend .nhsuk-heading-xl; }
+.heading-large 		{ @extend .nhsuk-heading-l; }
+.heading-medium 	{ @extend .nhsuk-heading-m; }
+.heading-small		{ @extend .nhsuk-heading-s; }
+.lede				{ @extend .nhsuk-body-l; }
+.font-xsmall		{ @extend .nhsuk-body-s; }
+
+/*
+// Other classes for hr
+nhsuk-section-break--xl
+nhsuk-section-break--l
+nhsuk-section-break--m
+*/
+
+// Lists
+
+.list				{ @extend .nhsuk-list; }
+.list-bullet		{ @extend .nhsuk-list; @extend .nhsuk-list--bullet; }
+.list-number		{ @extend .nhsuk-list; @extend .nhsuk-list--number; }
+
+// Layout and grid system class names
+
+.grid-row			{ @extend .nhsuk-grid-row; }
+.column-full		{ @extend .nhsuk-grid-column-full; }
+.column-one-half	{ @extend .nhsuk-grid-column-one-half; }
+.column-one-third	{ @extend .nhsuk-grid-column-one-third; }
+.column-two-thirds	{ @extend .nhsuk-grid-column-two-thirds; }
+.column-one-quarter	{ @extend .nhsuk-grid-column-one-quarter; }
+
+// Form related class names
+
+.form-group			{ @extend .nhsuk-form-group; }
+.form-hint			{ @extend .nhsuk-label__hint !optional; }
+.form-label			{ @extend .nhsuk-label; }
+
+// Helper
+
+.visually-hidden, .visuallyhidden {	@extend .nhsuk-visually-hidden; }
+
+// Overrides
+
+.font-xlarge		{ @extend .nhsuk-body; @extend .nhsuk-heading-xl }
+.font-large			{ @extend .nhsuk-body; @extend .nhsuk-heading-l; }
+.font-medium		{ @extend .nhsuk-body; @extend .nhsuk-heading-m; }
+.font-small			{ @extend .nhsuk-body; @extend .nhsuk-heading-s; }
+.font-xsmall		{ @extend .nhsuk-body; }
+.bold-xxlarge		{ @extend .nhsuk-body; @include nhsuk-font(80) }
+.bold-xlarge		{ @extend .nhsuk-body; @include nhsuk-font(48) }
+.bold-large			{ @extend .nhsuk-body; @include nhsuk-font(36) }
+.bold-medium		{ @extend .nhsuk-body; @include nhsuk-font(27) }
+.bold-small			{ @extend .nhsuk-body; @include nhsuk-font(16) }
+.bold-xsmall		{ @extend .nhsuk-body; @include nhsuk-font(14) }
+.bold				{ @extend .nhsuk-body; font-weight: bold; }
+
+// Layout
+
+$gutter:			$nhsuk-gutter;
+$gutter-half:		$nhsuk-gutter-half;
+
+
+// Brand colours
+$nhsuk-blue: 		nhsuk-colour("blue");
+$mainstream-brand: 	$nhsuk-blue;
+
+// Standard palette, colours
+$purple: 		nhsuk-colour("purple");
+$mauve: 		nhsuk-colour("light-purple");
+$fuschia: 		nhsuk-colour("bright-purple");
+$pink: 			nhsuk-colour("pink");
+$baby-pink: 	nhsuk-colour("light-pink");
+$red: 			nhsuk-colour("red");
+$mellow-red: 	nhsuk-colour("bright-red");
+$orange: 		nhsuk-colour("orange");
+$brown: 		nhsuk-colour("brown");
+$yellow: 		$nhsuk-focus-colour;
+$grass-green: 	nhsuk-colour("light-green");
+$green: 		nhsuk-colour("green");
+$turquoise: 	nhsuk-colour("turquoise");
+$light-blue: 	nhsuk-colour("light-blue");
+
+// Standard palette, greys
+$black: 		$nhsuk-text-colour;
+$grey-1: 		nhsuk-colour("grey-1");
+$grey-2: 		nhsuk-colour("grey-2");
+$grey-3: 		nhsuk-colour("grey-3");
+$grey-4: 		nhsuk-colour("grey-4");
+$white: 		nhsuk-colour("white");
+
+
+// Semantic colour names
+$link-colour: 			$nhsuk-blue;
+$link-active-colour: 	$light-blue;
+$link-hover-colour: 	$light-blue;
+$link-visited-colour: 	$nhsuk-link-visited-colour;
+$button-colour: 		nhsuk-colour("green");
+$focus-colour: 			$yellow;
+$text-colour: 			$black;
+$secondary-text-colour: $grey-1;
+$border-colour: 		$grey-2;
+$panel-colour: 			$grey-3;
+$canvas-colour: 		$grey-4;
+$highlight-colour: 		$grey-4;
+$page-colour: 			$white;
+$discovery-colour: 		$nhsuk-blue;
+$alpha-colour: 			$nhsuk-blue;
+$beta-colour: 			$nhsuk-blue;
+$live-colour: 			$grass-green;
+$banner-text-colour: 	$black;
+$error-colour: 			$red;
+$error-background: 		nhsuk-colour("red"); 

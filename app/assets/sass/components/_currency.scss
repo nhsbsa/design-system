@@ -1,0 +1,51 @@
+
+.nhsbsa-currency-input {
+  position: relative;
+}
+
+.nhsbsa-currency-input__symbol {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+  padding: 8px 10px;
+  height: 40px;
+  box-sizing: border-box;
+  background-color: #f3f2f1;
+  border: 2px solid #0b0c0c;
+}
+
+@media print {
+  .nhsbsa-currency-input__symbol {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .nhsbsa-currency-input__symbol {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .nhsbsa-currency-input__symbol {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+.nhsbsa-currency-input input {
+  padding-left: 40px;
+}
+
+.nhsbsa-currency-input__input--right-aligned {
+  text-align: right;
+}

@@ -1,0 +1,89 @@
+{% extends 'layouts/layout-bsa-design-system.html' %}
+
+{% block pageTitle %}
+Start page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+
+<!--
+  {{ breadcrumb({
+      href: "/diat/design-system-home",
+      text: "Design System"
+  }) }}
+-->
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+        <div class="article-section-nav-outer-wrapper">
+            <div id="sticky-nav" class="" style="">
+                <div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
+                    <div class="article-section-nav-wrapper">
+                        <div class="article-section-nav">
+                            <nav id="toc" class="js-toc-list toc__list">
+                                <ol class="article-section-nav__list">
+                                    <li>
+                                        <a href="styles/1">1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">3</a>
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nhsuk-grid-column-two-thirds">
+        <h1>Styles</h1>
+
+      <p class="nhsuk-body-l">Digital services for government staff users in the NHSBSA (new services and existing digital services that are being redeveloped) should use these styles.</p>
+      <p>In the NHSBSA this includes:</p>
+      <ul class="list list-bullet">
+        <li>caseworking systems</li>
+        <li>microsites</li>
+        <li>intranets</li>
+      </ul>
+<!--      <p>The styles are available in a <a href="#">NHSBSA version of the prototype kit</a>.</p>-->
+
+
+      <h2>Why we created these styles</h2>
+<!--      <p>If your service is not on a gov.uk or service.gov.uk domain, you cannot use the GOV.UK crown logo (Service Manual, <a href="https://www.gov.uk/service-manual/design/services-for-government-users">Services for government users</a>) or the <a href="https://designnotes.blog.gov.uk/2015/03/11/can-i-use-the-gov-uk-fonts/">GDS Transport font</a>.</p>-->
+      
+<!--
+      <p>Most NHSBSA services for NHS staff users fall within these restrictions. For those services, these styles replace the GOV.UK styling.</p>
+      
+-->
+      <p>This guidance applies to digital services, and does not affect or change any of the NHSBSA's existing brand advice for print and offline applications.</p>
+<!--
+      
+       <p>Read a blog post about <a href="#0">why we created seperate styling for services for government users</a>.</p> 
+-->
+
+    </div>
+
+    </div>
+
+    <!--
+        /**
+         * sticky-sidebar - A JavaScript plugin for making smart and high performance.
+         * @version v3.3.1
+         * @link https://github.com/abouolia/sticky-sidebar
+         * @author Ahmed Bouhuolia
+         * @license The MIT License (MIT)
+         **/
+-->
+
+</div>
+{% endblock %}
