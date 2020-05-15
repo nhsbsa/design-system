@@ -9,61 +9,8 @@ Postcode lookup - NHSBSA design system
 {% block content %}
 
 <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-one-third">
-        <div class="article-section-nav-outer-wrapper">
-            <div id="sticky-nav" class="" style="">
-                <div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
-                    <div class="article-section-nav-wrapper">
-                        <div class="article-section-nav">
-                            <nav id="toc" class="js-toc-list toc__list">
-                                <ol class="article-section-nav__list">
-                                    <li>
-                                        <a href="confirmation-loop">Check and confirm</a>
-                                    </li>
-                                    <li>
-                                        <a href="help">Contextual help</a>
-                                    </li>
-                                    <li>
-                                        <a href="enquiry">Enquiry form</a>
-                                    </li>
-                                    <li>
-                                        <a href="error-pages">Error Page</a>
-                                    </li>
-                                    <li>
-                                        <a href="sign-out">Leaving a service</a>
-                                    </li>
-                                    <li>
-                                        <a href="guidance-image">Guidance images</a>
-                                    </li>
-                                    <li>
-                                        <a href="identifying-users">Authentication of users</a>
-                                    </li>
-                                    <li>
-                                        <a href="interruption-card">Interruption card</a>
-                                    </li>
-                                    <li>
-                                        <a href="modal">Modal window</a>
-                                    </li>
-                                    <li>
-                                        <a href="multiple-loops">Multiple loops</a>
-                                    </li>
-                                    <li>
-                                        <a href="postcode">Postcode lookup</a>
-                                    </li>
-                                    <li>
-                                        <a href="question-funnel">Question funnel</a>
-                                    </li>
-                                    <li>
-                                        <a href="upload-file">Upload a document</a>
-                                    </li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    {% include "includes/left-pane__patterns.html" %}
+     
 
     <div class="nhsuk-grid-column-two-thirds">
       <span class="nhsuk-caption-xl">Patterns</span>

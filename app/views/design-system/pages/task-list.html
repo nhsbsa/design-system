@@ -1,6 +1,6 @@
 {% extends 'layouts/layout-bsa-design-system.html' %}
 {% set active = "pages" %}
-{% set activesub = "date-of-birth" %}
+{% set activesub = "task-list" %}
 
 {% block pageTitle %}
 Start page template - NHS.UK prototype kit
@@ -8,12 +8,10 @@ Start page template - NHS.UK prototype kit
 
 {% block beforeContent %}
 
-
 {{ breadcrumb({
-      href: "/index",
-      text: "Home"
-  }) }}
-
+    href: "/index",
+    text: "Home"
+}) }}
 
 {% endblock %}
 
@@ -25,7 +23,7 @@ Start page template - NHS.UK prototype kit
         
         <div class="nhsuk-grid-column-two-thirds">
         <span class="nhsuk-caption-xl">Patterns</span>
-          <h1 class="heading-section">Date of birth</h1>
+          <h1 class="heading-section">Task list</h1>
           <p class="nhsuk-body-l">example of component on a page.</p>
         
     <h3 class="nhsuk-u-visually-hidden"></h3>

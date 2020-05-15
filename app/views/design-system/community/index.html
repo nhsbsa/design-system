@@ -6,18 +6,10 @@ Start page template - NHS.UK prototype kit
 
 {% block beforeContent %}
 
-<!--
 {{ breadcrumb({
-  items: [
-    {
-      href: "/diat/design-system-home",
-      text: "Design System"
-    }
-  ],
-      href: "/diat/community/community",
-      text: "Community"
+    href: "/index",
+    text: "Home"
 }) }}
--->
 
 
 {% endblock %}
@@ -25,31 +17,9 @@ Start page template - NHS.UK prototype kit
 {% block content %}
 
 <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-one-third">
-        <div class="article-section-nav-outer-wrapper">
-            <div id="sticky-nav" class="" style="">
-                <div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
-                    <div class="article-section-nav-wrapper">
-                        <div class="article-section-nav">
-                            <nav id="toc" class="js-toc-list toc__list">
-                                <ol class="article-section-nav__list">
-                                    <li>
-                                        <a href="community/backlog">Backlog</a>
-                                    </li>
-                                    <li>
-                                        <a href="community/contribute">Contribute</a>
-                                    </li>
-                                    <li>
-                                        <a href="community/using-patterns">Using the system</a>
-                                    </li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    {% include "includes/left-pane__contribute.html" %}
+    
+    
 
     <div class="nhsuk-grid-column-two-thirds">
         <h1>Community</h1>

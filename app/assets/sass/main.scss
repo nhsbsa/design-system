@@ -13,6 +13,25 @@
 // Add your custom CSS/Sass styles below... 
 ///////////////////////////////////////////
 
+/* Swatches for colours page styles */
+
+.app-colour-list__swatch{
+  background-color: #f0f4f5;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  display: inline-block;
+  height: 40px;
+  margin-right: 8px;
+  vertical-align: middle;
+  width: 40px;
+}
+
+.app-colour-list__swatch--border {
+  border: 1px solid #d8dde0;
+}
+
+/* End of swatches for colours page styles */
+
 .example {
     position: relative;
     overflow: hidden;
@@ -120,6 +139,15 @@ confirmation {
         text-decoration: none;
         font-weight: bold;
     }
+
+    li.active a{
+       border-left: 7px solid #ffb81c;
+        padding-left: 10px!important;
+        color: #425563;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
 
     /* Article sections */
     .article-section {

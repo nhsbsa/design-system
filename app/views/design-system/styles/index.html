@@ -6,44 +6,20 @@ Start page template - NHS.UK prototype kit
 
 {% block beforeContent %}
 
-<!--
-  {{ breadcrumb({
-      href: "/diat/design-system-home",
-      text: "Design System"
-  }) }}
--->
+{{ breadcrumb({
+    href: "/index",
+    text: "Home"
+}) }}
 
 {% endblock %}
-
 {% block content %}
 
 
 <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-one-third">
-        <div class="article-section-nav-outer-wrapper">
-            <div id="sticky-nav" class="" style="">
-                <div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
-                    <div class="article-section-nav-wrapper">
-                        <div class="article-section-nav">
-                            <nav id="toc" class="js-toc-list toc__list">
-                                <ol class="article-section-nav__list">
-                                    <li>
-                                        <a href="styles/colours">Colours</a>
-                                    </li>
-                                    <li>
-                                        <a href="styles/images">Images</a>
-                                    </li>
-                                    <li>
-                                        <a href="styles/icon-usage">Icons</a>
-                                    </li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    {% include "includes/left-pane__styles.html" %}
+    
+    
+
 
     <div class="nhsuk-grid-column-two-thirds">
         <h1>Styles</h1>

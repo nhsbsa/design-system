@@ -6,6 +6,11 @@ Start page template - NHS.UK prototype kit
 
 {% block beforeContent %}
 
+{{ breadcrumb({
+  href: "/index",
+  text: "Home"
+}) }}
+
 {% endblock %}
 
 {% block content %}
