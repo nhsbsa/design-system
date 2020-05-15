@@ -1,42 +1,59 @@
-<div class="app-pane__subnav app-hide-mobile">
+<div class="nhsuk-grid-column-one-third">
+  <div class="article-section-nav-outer-wrapper">
+      <div id="sticky-nav" class="" style="">
+          <div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
+              <div class="article-section-nav-wrapper">
+                  <div class="article-section-nav">
+                      <nav id="toc" class="js-toc-list toc__list">
+                          <ol class="article-section-nav__list">
+
+
+
+<!-- <div class="app-pane__subnav app-hide-mobile ">
   <nav class="app-subnav">
-    <ul class="app-subnav__section">
-      <li{% if activesub == "check" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link nhsuk-link" href="/patterns/confirmation-loop">Check and confirm</a>
+    <ul class="app-subnav__section"> -->
+      <li{% if activesub == "check" %} class="active app-subnav__section-item app-subnav__section-item--current active"{% endif %}>
+        <a class="app-subnav__link nhsuk-link"  href="/design-system/patterns/confirmation-loop">Check and confirm</a>
       </li>
-      <li{% if activesub == "help" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link nhsuk-link" href="/patterns/help">Contextual help</a>
+      <li{% if activesub == "help" %} class="active app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link nhsuk-link" href="/design-system/patterns/help">Contextual help</a>
       </li>
-      <li{% if activesub == "enquiry" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link nhsuk-link" href="/patterns/enquiry">Enquiry form</a>
+      <li{% if activesub == "enquiry" %} class="active app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link nhsuk-link" href="/design-system/patterns/enquiry">Enquiry form</a>
       </li>
-      <!-- <li{% if activesub == "error" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link nhsuk-link" href="/patterns/error-pages">Error pages</a>
-      </li> -->
-      <li{% if activesub == "guide-image" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link nhsuk-link" href="/patterns/guidance-image">Guidance images</a>
+      <li{% if activesub == "error" %} class="active app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link nhsuk-link" href="/design-system/patterns/error-pages">Error pages</a>
       </li>
-      <li{% if activesub == "auth" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link nhsuk-link" href="/patterns/identifying-users">Identifying users</a>
+      <li{% if activesub == "guide-image" %} class="active app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link nhsuk-link" href="/design-system/patterns/guidance-image">Guidance images</a>
       </li>
-      <li{% if activesub == "interruption" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link nhsuk-link" href="/patterns/interruption-card">Interruption card</a>
+      <li{% if activesub == "auth" %} class="active app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link nhsuk-link" href="/design-system/patterns/identifying-users">Identifying users</a>
       </li>
-      <li{% if activesub == "leave" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link nhsuk-link" href="/patterns/sign-out">Leaving a service</a>
+      <li{% if activesub == "interruption" %} class="active app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link nhsuk-link" href="/design-system/patterns/interruption-card">Interruption card</a>
       </li>
-      <li{% if activesub == "modal" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link nhsuk-link" href="/patterns/modal">Modal window</a>
+      <li{% if activesub == "leave" %} class="active app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link nhsuk-link" href="/design-system/patterns/sign-out">Leaving a service</a>
       </li>
-      <li{% if activesub == "loops" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link nhsuk-link" href="/patterns/multiple-loops">Multiple loops</a>
+      <li{% if activesub == "modal" %} class="active app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link nhsuk-link" href="/design-system/patterns/modal">Modal window</a>
       </li>
-      <li{% if activesub == "postcode" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link nhsuk-link" href="/patterns/postcode">Postcode lookup</a>
+      <li{% if activesub == "loops" %} class="active app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link nhsuk-link" href="/design-system/patterns/multiple-loops">Multiple loops</a>
       </li>
-      <li{% if activesub == "upload" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link nhsuk-link" href="/patterns/upload-file">Uploading (adding) files</a>
+      <li{% if activesub == "postcode" %} class="active app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link nhsuk-link" href="/design-system/patterns/postcode">Postcode lookup</a>
+      </li>
+      <li{% if activesub == "upload" %} class="active app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link nhsuk-link" href="/design-system/patterns/upload-file">Uploading (adding) files</a>
       </li>
     </ul>
   </nav>
+</div>
+
+</div>
+</div>
+</div>
+</div>
 </div>

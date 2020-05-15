@@ -1,20 +1,36 @@
-<div class="app-pane__subnav app-hide-mobile">
-  <nav class="app-subnav">
+<div class="nhsuk-grid-column-one-third">
+  <div class="article-section-nav-outer-wrapper">
+      <div id="sticky-nav" class="" style="">
+          <div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
+              <div class="article-section-nav-wrapper">
+                  <div class="article-section-nav">
+                      <nav id="toc" class="js-toc-list toc__list">
+                          <ol class="article-section-nav__list">
 
-    <ul class="app-subnav__section">
-      <li{% if activesub == "backlog" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link nhsuk-link" href="/community/backlog">Backlog</a>
+
+
+<!--
+<div class="app-pane__subnav app-hide-mobile">
+<nav class="app-subnav">
+<ul class="app-subnav__section"> 
+-->
+      <li{% if activesub == "backlog" %} class="active app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link nhsuk-link" href="/design-system/community/backlog">Backlog</a>
       </li>
-      <li{% if activesub == "propose" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link nhsuk-link" href="/community/propose">Propose work</a>
+      <li{% if activesub == "contribute" %} class="active app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link nhsuk-link" href="/design-system/community/contribute">Contribute</a>
       </li>
-      <li{% if activesub == "stages" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link nhsuk-link" href="/community/stages">Stages of work</a>
-      </li>
-      <li{% if activesub == "using" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link nhsuk-link" href="/community/using">Using the system</a>
+      <li{% if activesub == "using" %} class="active app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link nhsuk-link" href="/design-system/community/using-patterns">Using the system</a>
       </li>
     </ul>
 
   </nav>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
 </div>

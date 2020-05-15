@@ -6,12 +6,12 @@ Start page template - NHS.UK prototype kit
 
 {% block beforeContent %}
 
-<!--
+
   {{ breadcrumb({
-      href: "/diat/design-system-home",
-      text: "Design System"
+      href: "/index",
+      text: "Home"
   }) }}
--->
+
 
 {% endblock %}
 
@@ -19,37 +19,8 @@ Start page template - NHS.UK prototype kit
 
 
 <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-one-third">
-        <div class="article-section-nav-outer-wrapper">
-            <div id="sticky-nav" class="" style="">
-                <div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
-                    <div class="article-section-nav-wrapper">
-                        <div class="article-section-nav">
-                            <nav id="toc" class="js-toc-list toc__list">
-                                <ol class="article-section-nav__list">
-                                    <li>
-                                        <a href="resources/accessibility">Accessibility</a>
-                                    </li>
-                                    <li>
-                                        <a href="resources/nhsuk">NHS.UK</a>
-                                    </li>
-                                    <li>
-                                        <a href="resources/gov">GOV.UK</a>
-                                    </li>
-                                    <li>
-                                        <a href="resources/prototyping">Prototyping</a>
-                                    </li>
-                                    <li>
-                                        <a href="resources/templates">Templates</a>
-                                    </li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    {% include "includes/left-pane__resources.html" %}
+    
 
     <div class="nhsuk-grid-column-two-thirds">
         <h1>Resources</h1>

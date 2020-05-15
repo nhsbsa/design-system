@@ -1,17 +1,18 @@
 {% extends 'layouts/layout-bsa-design-system.html' %}
+{% set active = "styles" %}
+{% set activesub = "colour" %}
 
 {% block pageTitle %}
-Start page template - NHS.UK prototype kit
+Colour - NHS Business Services Authority design system
 {% endblock %}
-
 {% block beforeContent %}
 
-<!--
+
   {{ breadcrumb({
-      href: "/diat/design-system-home",
-      text: "Design System"
+      href: "/index",
+      text: "Home"
   }) }}
--->
+
 
 {% endblock %}
 
@@ -19,31 +20,9 @@ Start page template - NHS.UK prototype kit
 
 
 <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-one-third">
-        <div class="article-section-nav-outer-wrapper">
-            <div id="sticky-nav" class="" style="">
-                <div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
-                    <div class="article-section-nav-wrapper">
-                        <div class="article-section-nav">
-                            <nav id="toc" class="js-toc-list toc__list">
-                                <ol class="article-section-nav__list">
-                                    <li>
-                                        <a href="colours">Colours</a>
-                                    </li>
-                                    <li>
-                                        <a href="images">Images</a>
-                                    </li>
-                                    <li>
-                                        <a href="icon-usage">Icons</a>
-                                    </li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  {% include "includes/left-pane__styles.html" %}
+    
+    
 
     <div class="nhsuk-grid-column-two-thirds">
         <span class="nhsuk-caption-l">
@@ -57,7 +36,327 @@ Start page template - NHS.UK prototype kit
 
       <h2>Using Colour</h2>
 
+      <table class="app-colour-list" summary="Table of main colours">
+        <tbody>
+    
+          <tr>
+            <td class="nhsuk-u-padding-left-0" colspan="3">
+              <h3 class="nhsuk-heading-m nhsuk-u-margin-bottom-0">
+              Text
+              </h3>
+            </td>
+          </tr>
+          <tr class="app-colour-list__row">
+            <th class="app-colour-list__column app-colour-list__column--name" scope="row">
+              <span class="app-colour-list__swatch" style="background-color:#212b32"></span>
+              <code>$nhsuk-text-color</code>
+            </th>
+            <td class="app-colour-list__column app-colour-list__column--colour">
+              #212b32
+            </td>
+          </tr>
+          <tr class="app-colour-list__row">
+            <th class="app-colour-list__column app-colour-list__column--name" scope="row">
+              <span class="app-colour-list__swatch" style="background-color:#4c6272"></span>
+              <code>$nhsuk-secondary-text-color</code>
+            </th>
+            <td class="app-colour-list__column app-colour-list__column--colour">
+              #4c6272
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="nhsuk-u-padding-left-0" colspan="3">
+              <h3 class="nhsuk-heading-m  nhsuk-u-margin-top-3 nhsuk-u-margin-bottom-0">
+              Links
+              </h3>
+            </td>
+          </tr>
+          <tr class="app-colour-list__row">
+            <th class="app-colour-list__column app-colour-list__column--name" scope="row">
+              <span class="app-colour-list__swatch" style="background-color:#005eb8"></span>
+              <code>$nhsuk-link-color</code>
+            </th>
+            <td class="app-colour-list__column app-colour-list__column--colour">
+              #005eb8
+            </td>
+          </tr>
+          <tr class="app-colour-list__row">
+            <th class="app-colour-list__column app-colour-list__column--name" scope="row">
+              <span class="app-colour-list__swatch" style="background-color:#7C2855"></span>
+              <code>$nhsuk-link-hover-color</code>
+            </th>
+            <td class="app-colour-list__column app-colour-list__column--colour">
+              #7C2855
+            </td>
+          </tr>
+          <tr class="app-colour-list__row">
+            <th class="app-colour-list__column app-colour-list__column--name" scope="row">
+              <span class="app-colour-list__swatch" style="background-color:#330072"></span>
+              <code>$nhsuk-link-visited-color</code>
+            </th>
+            <td class="app-colour-list__column app-colour-list__column--colour">
+              #330072
+            </td>
+          </tr>
+          <tr class="app-colour-list__row">
+            <th class="app-colour-list__column app-colour-list__column--name" scope="row">
+              <span class="app-colour-list__swatch" style="background-color:#002f5c"></span>
+              <code>$nhsuk-link-active-color</code>
+            </th>
+            <td class="app-colour-list__column app-colour-list__column--colour">
+              #002f5c
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="nhsuk-u-padding-left-0" colspan="3">
+              <h3 class="nhsuk-heading-m  nhsuk-u-margin-top-3 nhsuk-u-margin-bottom-0">
+              Focus state
+              </h3>
+            </td>
+          </tr>
+          <tr class="app-colour-list__row">
+            <th class="app-colour-list__column app-colour-list__column--name" scope="row">
+              <span class="app-colour-list__swatch" style="background-color:#ffeb3b"></span>
+              <code>$nhsuk-focus-color</code>
+            </th>
+            <td class="app-colour-list__column app-colour-list__column--colour">
+              #ffeb3b
+            </td>
+          </tr>
+          <tr class="app-colour-list__row">
+            <th class="app-colour-list__column app-colour-list__column--name" scope="row">
+              <span class="app-colour-list__swatch" style="background-color:#212b32"></span>
+              <code>$nhsuk-focus-text-color</code>
+            </th>
+            <td class="app-colour-list__column app-colour-list__column--colour">
+              #212b32
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="nhsuk-u-padding-left-0" colspan="3">
+              <h3 class="nhsuk-heading-m  nhsuk-u-margin-top-3 nhsuk-u-margin-bottom-0">
+              Border
+              </h3>
+            </td>
+          </tr>
+          <tr class="app-colour-list__row">
+            <th class="app-colour-list__column app-colour-list__column--name" scope="row">
+              <span class="app-colour-list__swatch" style="background-color:#d8dde0"></span>
+              <code>$nhsuk-border-color</code>
+            </th>
+            <td class="app-colour-list__column app-colour-list__column--colour">
+              #d8dde0
+            </td>
+          </tr>
+          <tr class="app-colour-list__row">
+            <th class="app-colour-list__column app-colour-list__column--name" scope="row">
+              <span class="app-colour-list__swatch" style="background-color:#4c6272"></span>
+              <code>$nhsuk-form-border-color</code>
+            </th>
+            <td class="app-colour-list__column app-colour-list__column--colour">
+              #4c6272
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="nhsuk-u-padding-left-0" colspan="3">
+              <h3 class="nhsuk-heading-m  nhsuk-u-margin-top-3 nhsuk-u-margin-bottom-0">
+              Error state
+              </h3>
+            </td>
+          </tr>
+          <tr class="app-colour-list__row">
+            <th class="app-colour-list__column app-colour-list__column--name" scope="row">
+              <span class="app-colour-list__swatch" style="background-color:#d5281b"></span>
+              <code>$nhsuk-error-color</code>
+            </th>
+            <td class="app-colour-list__column app-colour-list__column--colour">
+              #d5281b
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="nhsuk-u-padding-left-0" colspan="3">
+              <h3 class="nhsuk-heading-m  nhsuk-u-margin-top-3 nhsuk-u-margin-bottom-0">
+              Button
+              </h3>
+            </td>
+          </tr>
+          <tr class="app-colour-list__row">
+            <th class="app-colour-list__column app-colour-list__column--name" scope="row">
+              <span class="app-colour-list__swatch" style="background-color:#007f3b"></span>
+              <code>$nhsuk-button-color</code>
+            </th>
+            <td class="app-colour-list__column app-colour-list__column--colour">
+              #007f3b
+            </td>
+          </tr>
+          <tr class="app-colour-list__row">
+            <th class="app-colour-list__column app-colour-list__column--name" scope="row">
+              <span class="app-colour-list__swatch" style="background-color:#4c6272"></span>
+              <code>$nhsuk-secondary-button-color</code>
+            </th>
+            <td class="app-colour-list__column app-colour-list__column--colour">
+              #4c6272
+            </td>
+          </tr>
+    
+        </tbody>
+      </table>
+
+      <h2>Colour palette</h2>
+
+      <table class="app-colour-list" summary="Table of the full colour palette">
+        <tbody>
+    
+          <tr class="app-colour-list__row">
+            <th class="app-colour-list__column app-colour-list__column--name" scope="row">
+              <span class="app-colour-list__swatch" style="background-color:#005eb8"></span>
+              <code>$color_nhsuk-blue</code>
+            </th>
+            <td class="app-colour-list__column app-colour-list__column--colour">
+              #005eb8
+            </td>
+          </tr>
+    
+          <tr class="app-colour-list__row">
+            <th class="app-colour-list__column app-colour-list__column--name" scope="row">
+              <span class="app-colour-list__swatch" style="background-color:#007f3b"></span>
+              <code>$color_nhsuk-green</code>
+            </th>
+            <td class="app-colour-list__column app-colour-list__column--colour">
+              #007f3b
+            </td>
+          </tr>
+    
+          <tr class="app-colour-list__row">
+            <th class="app-colour-list__column app-colour-list__column--name" scope="row">
+              <span class="app-colour-list__swatch" style="background-color:#ffeb3b"></span>
+              <code>$color_nhsuk-yellow</code>
+            </th>
+            <td class="app-colour-list__column app-colour-list__column--colour">
+              #ffeb3b
+            </td>
+          </tr>
+    
+          <tr class="app-colour-list__row">
+            <th class="app-colour-list__column app-colour-list__column--name" scope="row">
+              <span class="app-colour-list__swatch" style="background-color:#ffb81C"></span>
+              <code>$color_nhsuk-warm-yellow</code>
+            </th>
+            <td class="app-colour-list__column app-colour-list__column--colour">
+              #ffb81C
+            </td>
+          </tr>
+    
+          <tr class="app-colour-list__row">
+            <th class="app-colour-list__column app-colour-list__column--name" scope="row">
+              <span class="app-colour-list__swatch" style="background-color:#d5281b"></span>
+              <code>$color_nhsuk-red</code>
+            </th>
+            <td class="app-colour-list__column app-colour-list__column--colour">
+              #d5281b
+            </td>
+          </tr>
+    
+          <tr class="app-colour-list__row">
+            <th class="app-colour-list__column app-colour-list__column--name" scope="row">
+              <span class="app-colour-list__swatch" style="background-color:#7C2855"></span>
+              <code>$color_nhsuk-dark-pink</code>
+            </th>
+            <td class="app-colour-list__column app-colour-list__column--colour">
+              #7C2855
+            </td>
+          </tr>
+    
+          <tr class="app-colour-list__row">
+            <th class="app-colour-list__column app-colour-list__column--name" scope="row">
+              <span class="app-colour-list__swatch" style="background-color:#330072"></span>
+              <code>$color_nhsuk-purple</code>
+            </th>
+            <td class="app-colour-list__column app-colour-list__column--colour">
+              #330072
+            </td>
+          </tr>
+    
+          <tr class="app-colour-list__row">
+            <th class="app-colour-list__column app-colour-list__column--name" scope="row">
+              <span class="app-colour-list__swatch" style="background-color:#4c6272"></span>
+              <code>$color_nhsuk-grey-1</code>
+            </th>
+            <td class="app-colour-list__column app-colour-list__column--colour">
+              #4c6272
+            </td>
+          </tr>
+    
+          <tr class="app-colour-list__row">
+            <th class="app-colour-list__column app-colour-list__column--name" scope="row">
+              <span class="app-colour-list__swatch" style="background-color:#768692"></span>
+              <code>$color_nhsuk-grey-2</code>
+            </th>
+            <td class="app-colour-list__column app-colour-list__column--colour">
+              #768692
+            </td>
+          </tr>
+    
+          <tr class="app-colour-list__row">
+            <th class="app-colour-list__column app-colour-list__column--name" scope="row">
+              <span class="app-colour-list__swatch" style="background-color:#aeb7bd"></span>
+              <code>$color_nhsuk-grey-3</code>
+            </th>
+            <td class="app-colour-list__column app-colour-list__column--colour">
+              #aeb7bd
+            </td>
+          </tr>
+    
+          <tr class="app-colour-list__row">
+            <th class="app-colour-list__column app-colour-list__column--name" scope="row">
+              <span class="app-colour-list__swatch" style="background-color:#d8dde0"></span>
+              <code>$color_nhsuk-grey-4</code>
+            </th>
+            <td class="app-colour-list__column app-colour-list__column--colour">
+              #d8dde0
+            </td>
+          </tr>
+    
+          <tr class="app-colour-list__row">
+            <th class="app-colour-list__column app-colour-list__column--name" scope="row">
+              <span class="app-colour-list__swatch app-colour-list__swatch--border" style="background-color:#f0f4f5"></span>
+              <code>$color_nhsuk-grey-5</code>
+            </th>
+            <td class="app-colour-list__column app-colour-list__column--colour">
+              #f0f4f5
+            </td>
+          </tr>
+    
+          <tr class="app-colour-list__row">
+            <th class="app-colour-list__column app-colour-list__column--name" scope="row">
+              <span class="app-colour-list__swatch" style="background-color:#ffffff"></span>
+              <code>$color_nhsuk-white</code>
+            </th>
+            <td class="app-colour-list__column app-colour-list__column--colour">
+              #ffffff
+            </td>
+          </tr>
+    
+          <tr class="app-colour-list__row">
+            <th class="app-colour-list__column app-colour-list__column--name" scope="row">
+              <span class="app-colour-list__swatch" style="background-color:#fff9c4"></span>
+              <code>$color_nhsuk-pale-yellow</code>
+            </th>
+            <td class="app-colour-list__column app-colour-list__column--colour">
+              #fff9c4
+            </td>
+          </tr>
+    
+        </tbody>
+      </table>
     </div>
+
+    
 
     </div>
 
