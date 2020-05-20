@@ -1,11 +1,16 @@
 {% extends 'layouts/layout-bsa-design-system.html' %}
 {% set active = "patterns" %}
-{% set activesub = "help" %}
+{% set activesub = "Help" %}
 
 {% block pageTitle %}
 Contextual help - NHS Business Services Authority design system
 {% endblock %}
 
+{% block beforeContent %}
+
+{% include "includes/breadcrumbs__patterns.html" %}
+
+{% endblock %}
 {% block content %}
 
 <div class="nhsuk-grid-row">

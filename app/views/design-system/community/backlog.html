@@ -1,7 +1,7 @@
 {% extends 'layouts/layout-bsa-design-system.html' %}
 
 {% set active = "community" %}
-{% set activesub = "backlog" %}
+{% set activesub = "Backlog" %}
 
 {% block pageTitle %}
 Start page template - NHS.UK prototype kit
@@ -9,13 +9,10 @@ Start page template - NHS.UK prototype kit
 
 {% block beforeContent %}
 
-{{ breadcrumb({
-    href: "/index",
-    text: "Home"
-}) }}
-
+{% include "includes/breadcrumbs__community.html" %}
 
 {% endblock %}
+
 
 {% block content %}
 
@@ -38,7 +35,7 @@ Start page template - NHS.UK prototype kit
     </div>
 
     <!--
-        /**
+        /**git
          * sticky-sidebar - A JavaScript plugin for making smart and high performance.
          * @version v3.3.1
          * @link https://github.com/abouolia/sticky-sidebar

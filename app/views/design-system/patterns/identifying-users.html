@@ -1,9 +1,14 @@
 {% extends 'layouts/layout-bsa-design-system.html' %}
 {% set active = "patterns" %}
-{% set activesub = "auth" %}
+{% set activesub = "Authentication" %}
 
 {% block pageTitle %}
 Authentication - NHSBSA design system
+{% endblock %}
+{% block beforeContent %}
+
+{% include "includes/breadcrumbs__patterns.html" %}
+
 {% endblock %}
 
 {% block content %}

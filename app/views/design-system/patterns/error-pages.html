@@ -1,10 +1,16 @@
 {% extends 'layouts/layout-bsa-design-system.html' %}
 
 {% set active = "patterns" %}
-{% set activesub = "error" %}
+{% set activesub = "Error page" %}
 
 {% block pageTitle %}
 Error page - NHSBSA design system
+{% endblock %}
+
+{% block beforeContent %}
+
+{% include "includes/breadcrumbs__patterns.html" %}
+
 {% endblock %}
 
 {% block content %}

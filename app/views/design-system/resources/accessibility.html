@@ -1,6 +1,6 @@
 {% extends 'layouts/layout-bsa-design-system.html' %}
 {% set active = "resoucres" %}
-{% set activesub = "accessibility" %}
+{% set activesub = "Accessibility" %}
 
 {% block pageTitle %}
 Start page template - NHS.UK prototype kit
@@ -8,16 +8,10 @@ Start page template - NHS.UK prototype kit
 
 {% block beforeContent %}
 
-
-{{ breadcrumb({
-    href: "/index",
-    text: "Home"
-}) }}
-
-
-
+{% include "includes/breadcrumbs__resources.html" %}
 
 {% endblock %}
+
 
 {% block content %}
 

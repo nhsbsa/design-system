@@ -1,18 +1,14 @@
 {% extends 'layouts/layout-bsa-design-system.html' %}
 {% set active = "styles" %}
-{% set activesub = "colour" %}
+{% set activesub = "Colour" %}
 
 {% block pageTitle %}
 Colour - NHS Business Services Authority design system
 {% endblock %}
+
 {% block beforeContent %}
 
-
-  {{ breadcrumb({
-      href: "/index",
-      text: "Home"
-  }) }}
-
+{% include "includes/breadcrumbs__styles.html" %}
 
 {% endblock %}
 

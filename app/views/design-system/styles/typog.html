@@ -1,6 +1,6 @@
 {% extends 'layouts/layout-bsa-design-system.html' %}
 {% set active = "styles" %}
-{% set activesub = "typography" %}
+{% set activesub = "Typography" %}
 
 {% block pageTitle %}
 Typography - NHS Business Services Authority design system
@@ -9,12 +9,7 @@ Typography - NHS Business Services Authority design system
 
 {% block beforeContent %}
 
-
-  {{ breadcrumb({
-      href: "/index",
-      text: "Home"
-  }) }}
-
+{% include "includes/breadcrumbs__styles.html" %}
 
 {% endblock %}
 
