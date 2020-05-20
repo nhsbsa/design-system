@@ -1,6 +1,6 @@
 {% extends 'layouts/layout-bsa-design-system.html' %}
 {% set active = "styles" %}
-{% set activesub = "icons" %}
+{% set activesub = "Icons" %}
 
 {% block pageTitle %}
 Icons - NHS Business Services Authority design system
@@ -8,12 +8,7 @@ Icons - NHS Business Services Authority design system
 
 {% block beforeContent %}
 
-
-  {{ breadcrumb({
-      href: "/index",
-      text: "Home"
-  }) }}
-
+{% include "includes/breadcrumbs__styles.html" %}
 
 {% endblock %}
 

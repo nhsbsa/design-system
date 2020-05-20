@@ -1,6 +1,6 @@
 {% extends 'layouts/layout-bsa-design-system.html' %}
 {% set active = "styles" %}
-{% set activesub = "images" %}
+{% set activesub = "Images" %}
 
 {% block pageTitle %}
 Images - NHS Business Services Authority design system
@@ -8,12 +8,7 @@ Images - NHS Business Services Authority design system
 
 {% block beforeContent %}
 
-
-  {{ breadcrumb({
-      href: "/index",
-      text: "Home"
-  }) }}
-
+{% include "includes/breadcrumbs__styles.html" %}
 
 {% endblock %}
 

@@ -1,9 +1,15 @@
 {% extends 'layouts/layout-bsa-design-system.html' %}
 {% set active = "patterns" %}
-{% set activesub = "upload" %}
+{% set activesub = "Upload a file" %}
 
 {% block pageTitle %}
 Add a file - NHSBSA design system
+{% endblock %}
+
+{% block beforeContent %}
+
+{% include "includes/breadcrumbs__patterns.html" %}
+
 {% endblock %}
 
 {% block content %}

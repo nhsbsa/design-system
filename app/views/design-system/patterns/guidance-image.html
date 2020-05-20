@@ -1,10 +1,16 @@
 {% extends 'layouts/layout-bsa-design-system.html' %}
 
 {% set active = "patterns" %}
-{% set activesub = "guide-image" %}
+{% set activesub = "Guidance image" %}
 
 {% block pageTitle %}
 Guidance page - NHSBSA design system
+{% endblock %}
+
+{% block beforeContent %}
+
+{% include "includes/breadcrumbs__patterns.html" %}
+
 {% endblock %}
 
 {% block content %}

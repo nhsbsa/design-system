@@ -7,8 +7,15 @@ Start page template - NHS.UK prototype kit
 {% block beforeContent %}
 
 {{ breadcrumb({
-    href: "/index",
-    text: "Home"
+  items: 
+  [
+    {
+      href: "/index",
+      text: "Home"
+    }
+  ],
+  href: "/design-system/pages",
+      text: "Pages"
 }) }}
 
 {% endblock %}

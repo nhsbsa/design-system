@@ -1,12 +1,17 @@
 {% extends 'layouts/layout-bsa-design-system.html' %}
 
 {% set active = "patterns" %}
-{% set activesub = "leave" %}
+{% set activesub = "Leaving a service" %}
 
 {% block pageTitle %}
 Leaving a service - NHSBSA design system
 {% endblock %}
 
+{% block beforeContent %}
+
+{% include "includes/breadcrumbs__patterns.html" %}
+
+{% endblock %}
 {% block content %}
 
 <div class="nhsuk-grid-row">

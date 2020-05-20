@@ -1,12 +1,17 @@
 {% extends 'layouts/layout-bsa-design-system.html' %}
 
 {% set active = "patterns" %}
-{% set activesub = "check" %}
+{% set activesub = "Check and confirm" %}
 
 {% block pageTitle %}
 Check and confirm - NHSBSA design system
 {% endblock %}
 
+{% block beforeContent %}
+
+{% include "includes/breadcrumbs__patterns.html" %}
+
+{% endblock %}
 {% block content %}
 
 
