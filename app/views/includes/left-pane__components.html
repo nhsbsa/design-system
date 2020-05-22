@@ -5,7 +5,8 @@
                     <div class="article-section-nav-wrapper">
                         <div class="article-section-nav">
                             <nav id="toc" class="js-toc-list toc__list">
-                                <ol class="article-section-nav__list">
+                            <h2>Components</h2>
+                                <ul class="article-section-nav__list">
  
 
  
@@ -14,7 +15,6 @@
   <nav class="app-subnav">
     <ul class="app-subnav__section">
 -->
-<h2>Components</h2>
       <li{% if activesub == "Alerts" %} class="active app-subnav__section-item app-subnav__section-item--current"{% endif %}>
         <a class="app-subnav__link nhsuk-link" href="/design-system/components/alerts">Alerts</a>
       </li>
@@ -64,7 +64,14 @@
         <a class="app-subnav__link nhsuk-link" href="/design-system/components/timeline">Timeline</a>
       </li>
 
-    </ol>
+    </ul>
+
+    <h2>Custom Components</h2>
+    <ul class="article-section-nav__list">
+      <li{% if activesub == "Cases" %} class="active app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link nhsuk-link" href="/design-system/components/custom/cases">Cases</a>
+      </li>
+    </ul>
   </nav>
 </div>
 
