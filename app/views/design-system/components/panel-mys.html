@@ -1,0 +1,63 @@
+{% extends 'layouts/layout-bsa-design-system.html' %}
+{% set active = "components" %}
+{% set activesub = "Panel" %}
+
+{% block pageTitle %}
+Back - NHSBSA design system
+{% endblock %}
+
+{% block beforeContent %}
+
+{% include "includes/breadcrumbs__components.html" %}
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="nhsuk-grid-row">
+    {% include "includes/left-pane__components.html" %}
+   
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <span class="nhsuk-caption-xl">Components</span>
+      <h1 class="heading-section">Panel (MYS)</h1>
+      
+
+      <h2 class="nhsuk-heading-m" id="example-component">Example components</h2>
+
+      <div class="example example-images">
+        <div class="nhsuk-grid-row">
+            {% include "includes/components/panel-mys.html" %}
+        </div>
+      </div>
+      
+      <details class="code-details">
+        <summary>HTML</summary>
+        <pre><code class="html">{% filter escape %}{% include "includes/components/panel-mys.html" %}{% endfilter %}</code></pre>
+      </details>
+      <details class="code-details details-margin-btm">
+        <summary>CSS</summary>
+        <pre><code class="css">{% filter escape %}{% include "includes/css/panel-mys.scss" %}{% endfilter %}</code></pre>
+      </details>
+
+      <h2 class="nhsuk-heading-m">When to use this component</h2>
+      <p>Taken from <a href="http://medex-ur.s3-website.eu-west-2.amazonaws.com/meo/dashboard/"> Medical examiner service prototype </a></p>
+
+
+      <h2 class="nhsuk-heading-m">When not to use this component</h2>
+     
+
+      <h2 class="nhsuk-heading-m">How to use</h2>
+     
+      <p>Groups content into a card, potentially a link, with optional footer to provide additional content.</p>
+
+      <p>Simmilar to the card component</p>
+      <h2 class="nhsuk-heading-m">User research</h2>
+    
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends 'layouts/layout-bsa-design-system.html' %}
+{% set active = "components" %}
+{% set activesub = "Verification table" %}
+
+{% block pageTitle %}
+Timeline - NHSBSA design system
+{% endblock %}
+
+{% block beforeContent %}
+
+{% include "includes/breadcrumbs__components.html" %}
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="nhsuk-grid-row">
+    {% include "includes/left-pane__components.html" %}
+   
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <span class="nhsuk-caption-xl">Components</span>
+      <h1 class="heading-section">Verification Table</h1>
+      <p class="nhsuk-body-l"></p>
+
+      <div class="example example-images" id="example-component">
+        <div class="nhsuk-grid-row">
+          {% include "includes/components/verification-table-mys.html" %}
+        </div>
+      </div>
+      <details class="code-details">
+        <summary>HTML</summary>
+        <pre><code class="html">{% filter escape %}{% include "includes/components/verification-table-mys.html" %}{% endfilter %}</code></pre>
+      </details>
+      <details class="code-details details-margin-btm">
+        <summary>CSS</summary>
+        <pre><code class="css">{% filter escape %}{% include "includes/css/verification-table-mys.scss" %}{% endfilter %}</code></pre>
+      </details>
+
+      <h2 id="interaction" class="nhsuk-heading-m">Interaction principles</h2>
+      <p>Use where information is ordered by time and unfiltered. If the information isn&rsquo;t displayed in time order or needs to be filtered, consider another approach.</p>
+
+      <h2 id="documentation" class="nhsuk-heading-m">Content principles</h2>
+      <p>Times and dates should follow <a href="https://www.gov.uk/service-manual/design/dates">GDS patterns on date and time format</a></p>
+      <p>Secondary titles aren't mandatory.</p>
+
+      <h2 class="nhsuk-heading-m">Services using this pattern</h2>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>Application platform</li>
+        <li>Entities</li>
+        <li>Passports</li>
+        <li>DAP</li>
+      </ul>
+
+
+
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,215 @@
+
+.declaration:before {
+    content: "DECLARATION";
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.2105263158em 0.7894736842em 0.2105263158em 0.7894736842em;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.25;
+    background: #bfc1c3;
+    color: white;
+}
+
+.declaration {
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #bfc1c3;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+.declaration p {
+    margin-top: 20px;
+}
+
+@media (min-width: 641px) {
+    .column-two-thirds {
+        float: left;
+        width: 66.66667%;
+    }
+}
+.strong {
+    font-weight: bold;
+}
+
+.panel {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    clear: both;
+    border-left-style: solid;
+    border-color: #bfc1c3;
+    padding: 0.78947em;
+    margin-bottom: 0.78947em;
+}
+
+.panel-border-wide {
+    border-left-width: 10px;
+}
+
+.button {
+    background-color: #00823b;
+    position: relative;
+    display: -moz-inline-stack;
+    display: inline-block;
+    padding: .526315em .789473em .263157em;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    outline: 1px solid transparent;
+    outline-offset: -1px;
+    -webkit-appearance: none;
+    -webkit-box-shadow: 0 2px 0 #003618;
+    -moz-box-shadow: 0 2px 0 #003618;
+    box-shadow: 0 2px 0 #003618;
+    font-size: 1em;
+    line-height: 1.25;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.form-control {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.25;
+    width: 100%;
+    padding: 5px 4px 4px;
+    border: 2px solid #0b0c0c;
+}
+
+.nbg label {
+    margin-top: -13px;
+}
+
+.multiple-choice label {
+    float: left;
+    margin-left: 48px;
+    padding-right: 25px;
+}
+
+.multiple-choice:first-child {
+    margin-top: 10px;
+}
+
+.multiple-choice .nbg {
+    background: none;
+}
+
+.multiple-choice input {
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+    width: 38px;
+    height: 38px;
+    z-index: 1;
+    margin: 0;
+    zoom: 1;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.multiple-choice {
+    background: #DEE0E2;
+    border: 1px solid white;
+    padding-left: 0;
+    margin-bottom: 15px;
+    min-height: 37px;
+}
+
+.form-group {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-group:after {
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+.form-label {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 19px;
+    line-height: 1.25;
+}
+
+.form-label, .form-label-bold {
+    display: block;
+    color: #0b0c0c;
+    padding-bottom: 2px;
+}
+
+.multiple-choice {
+    background: #DEE0E2;
+    border: 1px solid white;
+    padding-left: 0;
+    margin-bottom: 15px;
+    min-height: 37px;
+}
+
+.multiple-choice:first-child {
+    margin-top: 10px;
+}
+
+.multiple-choice:last-child, .multiple-choice:last-of-type {
+    margin-bottom: 0;
+}
+.multiple-choice input {
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+    width: 38px;
+    height: 38px;
+    z-index: 1;
+    margin: 0;
+    zoom: 1;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+@media (min-width: 641px) {
+    .form-control {
+        font-size: 19px;
+        line-height: 1.31579;
+        width: 50%;
+    }
+}
+
+@media (min-width: 641px) {
+    .form-label {
+        font-size: 19px;
+        line-height: 1.31579;
+    }
+}
+
+
+

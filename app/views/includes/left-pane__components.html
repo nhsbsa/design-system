@@ -5,8 +5,8 @@
                     <div class="article-section-nav-wrapper">
                         <div class="article-section-nav">
                             <nav id="toc" class="js-toc-list toc__list">
-                            <h2>Components</h2>
-                                <ul class="article-section-nav__list">
+                              <h2>Components</h2>
+                                <ol class="article-section-nav__list">
  
 
  
@@ -63,15 +63,25 @@
       <li{% if activesub == "Timeline" %} class="active app-subnav__section-item app-subnav__section-item--current"{% endif %}>
         <a class="app-subnav__link nhsuk-link" href="/design-system/components/timeline">Timeline</a>
       </li>
-
-    </ul>
-
-    <h2>Custom Components</h2>
-    <ul class="article-section-nav__list">
-      <li{% if activesub == "Cases" %} class="active app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link nhsuk-link" href="/design-system/components/custom/cases">Cases</a>
+    </ol>
+    <h2 class="header-space">Custom components (MYS)</h2>
+    <ol class="article-section-nav__list">
+      <li{% if activesub == "Case" %} class="active app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link nhsuk-link" href="/design-system/components/cases-mys">Case</a>
       </li>
-    </ul>
+      <li{% if activesub == "Panel" %} class="active app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link nhsuk-link" href="/design-system/components/panel-mys">Panel</a>
+      </li>
+      <li{% if activesub == "Promo" %} class="active app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link nhsuk-link" href="/design-system/components/promo-cards-mys">Promo</a>
+      </li>
+      <li{% if activesub == "Declaration" %} class="active app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link nhsuk-link" href="/design-system/components/declaration-mys">Declaration</a>
+      </li>
+      <li{% if activesub == "Verification table" %} class="active app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link nhsuk-link" href="/design-system/components/verification-table-mys">Verification table</a>
+      </li>
+    </ol>
   </nav>
 </div>
 
