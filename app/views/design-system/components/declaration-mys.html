@@ -1,0 +1,61 @@
+{% extends 'layouts/layout-bsa-design-system.html' %}
+{% set active = "components" %}
+{% set activesub = "Declaration" %}
+
+{% block pageTitle %}
+Back - NHSBSA design system
+{% endblock %}
+
+{% block beforeContent %}
+
+{% include "includes/breadcrumbs__components.html" %}
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="nhsuk-grid-row">
+    {% include "includes/left-pane__components.html" %}
+   
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <span class="nhsuk-caption-xl">Components</span>
+      <h1 class="heading-section"> Declaration (MYS)</h1>
+      
+
+      <h2 class="nhsuk-heading-m" id="example-component">Example components</h2>
+
+      <div class="example example-images">
+        <div class="nhsuk-grid-row">
+            {% include "includes/components/declaration-mys.html" %}
+        </div>
+      </div>
+      
+      <details class="code-details">
+        <summary>HTML</summary>
+        <pre><code class="html">{% filter escape %}{% include "includes/components/declaration-mys.html" %}{% endfilter %}</code></pre>
+      </details>
+      <details class="code-details details-margin-btm">
+        <summary>CSS</summary>
+        <pre><code class="css">{% filter escape %}{% include "includes/css/declaration-mys.scss" %}{% endfilter %}</code></pre>
+      </details>
+
+      <h2 class="nhsuk-heading-m">When to use this component</h2>
+      
+      <p>Used at the end of an MYS service before submitting which involves Pharmacies claiming payments for services rendered.</p>
+
+      <h2 class="nhsuk-heading-m">When not to use this component</h2>
+     
+
+      <h2 class="nhsuk-heading-m">How to use</h2>
+     
+
+      <h2 class="nhsuk-heading-m">User research</h2>
+      
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}

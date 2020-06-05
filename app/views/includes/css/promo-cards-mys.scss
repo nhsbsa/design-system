@@ -1,0 +1,95 @@
+$card-spacing: 16px;
+$card-border-radius: 0;
+$card-bg-color: #f8f8f8 ;
+$card-border-color: #bfc1c3;
+$card-actions-bg-color: #ffffff;
+.h2-card {
+    text-decoration: underline;
+}
+.bsa-card {
+    display: block;
+    height: 100%;
+    align-content: flex-start;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;    
+    box-sizing: border-box;
+    color: #005ea5;
+    background-color: $card-bg-color;
+    background-color: #F8F8F8;
+    box-shadow: 0 4px 0 0 #d8dde0;
+    position: relative;
+    text-decoration: none;
+    
+    a {
+        color: #4c2c92;
+        text-decoration: none;
+    }
+    a:focus {
+        color: #000000;
+        border-bottom: 2px solid #000000;
+        text-decoration: none;
+    }
+    &:hover {
+        
+            background-color: #F8F8F8;
+            box-shadow: 0 0 0 4px #ffb81C;
+            color: #005eb8;
+        .h2-card{
+            text-decoration: none;
+           }
+        }
+        &a:visited {
+            color:  #4c2c92;
+        }
+           
+    &__heading {
+        margin-top: 0;
+    }
+    &__header,
+    &__content,
+    &__actions {
+        padding: $card-spacing;
+    }
+    &__header {
+        background-color: $card-bg-color;
+        border-top-left-radius: $card-border-radius;
+        border-top-right-radius: $card-border-radius;
+        padding-bottom: 0;
+    }
+    &__content {
+        background-color: $card-bg-color;
+        > :first-child {
+            margin-top: 0;
+        }
+    }
+    &__actions {
+        flex-grow: 1;
+        margin-top: auto;
+        border-top: 1px solid $card-border-color;
+        background-color: $card-actions-bg-color;
+        border-bottom-left-radius: $card-border-radius;
+        border-bottom-right-radius: $card-border-radius;
+    }
+    &__actions-list {
+        li {
+            margin-bottom: $card-spacing * 1.2;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__actions-break {
+        padding-top: 10px;
+        border-top: 1px solid $card-border-color;
+    }
+   
+}
+a.link-wrap {
+    text-decoration: none;
+}
+.card-info{
+    color: #000000;
+}
