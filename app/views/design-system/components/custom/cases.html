@@ -1,0 +1,59 @@
+{% extends 'layouts/layout-bsa-design-system.html' %}
+{% set active = "components" %}
+{% set activesub = "Cases" %}
+
+{% block pageTitle %}
+Cases - NHSBSA design system
+{% endblock %}
+
+{% block beforeContent %}
+
+{% include "includes/breadcrumbs__components.html" %}
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="nhsuk-grid-row">
+    {% include "includes/left-pane__components.html" %}
+   
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <span class="nhsuk-caption-xl">Components</span>
+      <h1 class="heading-section">Cases</h1>
+      <p class="nhsuk-body-l">Some content about the cases component</p>
+
+      <h2 class="nhsuk-visually-hidden" id="example-component">Example cases component</h2>
+      <div class="example example-images">
+        <div class="nhsuk-grid-row">
+          {% include "includes/components/custom/cases/template.njk" %}
+        </div>
+      </div>
+      <details class="code-details">
+        <summary>HTML</summary>
+        <pre><code class="html">{% filter escape %}{% include "includes/components/custom/cases/template.njk" %}{% endfilter %}</code></pre>
+      </details>
+      <details class="code-details details-margin-btm">
+        <summary>CSS</summary>
+        <pre><code class="css">{% filter escape %}{% include "includes/components/custom/cases/_cases.scss" %}{% endfilter %}</code></pre>
+      </details>
+
+      <h2 class="nhsuk-heading-m">When to use this component</h2>
+
+
+      <h2 class="nhsuk-heading-m">When not to use this component</h2>
+
+
+      <h2 class="nhsuk-heading-m">User research</h2>
+
+
+      <h2 class="nhsuk-heading-m">Services using this pattern</h2>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>MYS</li>
+      </ul>
+    </div>
+  </main>
+</div>
+
+{% endblock %}
