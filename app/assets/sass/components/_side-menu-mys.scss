@@ -1,0 +1,75 @@
+/*------------------------------------*\
+Side navigation
+\*------------------------------------*/
+
+// Component styles
+
+.side-nav {
+    font-size: 19px;
+    float: left;
+    background: #E8EDEE;
+    width: 100%;
+    color: #005eb8;
+    overflow: hidden;
+    height: 100vh;
+    @media (min-width: 769px) {
+        width: 300px;
+        height: calc(100vh - 88px);
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    &.open {
+        height: auto;
+    }
+}
+.side-nav a {
+    text-decoration: none;
+    color: inherit;
+    &:focus {
+        background: none;
+        outline: none;
+    }
+}
+.side-nav__item {
+    padding-bottom: 1px;
+    &:first-of-type {
+        padding-top: 0;
+        &.active {
+            border-top: 1px solid #ffffff;
+        }
+    }
+    a {
+        font-weight: 400;
+        display: block;
+        overflow: hidden;
+        padding: 15px;
+        position: relative;
+        border-bottom: 1px solid #cccccc;
+    }
+    @media(min-width: 769px) {
+        display: block;
+        a {
+            padding: 20px 20px 20px 30px;
+        }
+        .counter {
+            top: 11px;
+        }
+    }
+    .open & {
+        display: block;
+    }
+    &.active {
+        display: block;
+        a {
+            background: #005eb8;
+            color: #ffffff;
+        }
+    }
+    a:hover {
+        background: #005eb8;
+        color: #ffffff;
+    }
+}

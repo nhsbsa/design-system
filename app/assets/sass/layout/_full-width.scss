@@ -1,0 +1,23 @@
+#internalContent {
+    overflow: auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 15px;
+    max-width: none;
+    float: left;
+    margin: 0;
+    background: #ffffff;
+  
+    @media (min-width: 769px) {
+      height: calc(100vh - 88px);
+      width: calc(100% - 300px);
+    }
+  
+    @media(min-width: 1020px) {
+      padding: 47px 60px;
+    }
+}
+  
+.content-wrapper {
+    max-width: 1080px;
+}

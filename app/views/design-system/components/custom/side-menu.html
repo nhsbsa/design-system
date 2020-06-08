@@ -1,0 +1,65 @@
+{% extends 'layouts/layout-bsa-design-system.html' %}
+{% set active = "components" %}
+{% set activesub = "Side menu" %}
+
+
+{% block pageTitle %}
+Side menu - NHSBSA design system
+{% endblock %}
+
+{% block beforeContent %}
+
+{% include "includes/breadcrumbs__components.html" %}
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="nhsuk-grid-row">
+    {% include "includes/left-pane__components.html" %}
+   
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <span class="nhsuk-caption-xl">Components</span>
+      <h1 class="heading-section">Side menu</h1>
+      <p class="nhsuk-body-l">Side menu text here</p>
+      
+
+      <h2 class="nhsuk-u-visually-hidden" id="example-component">Example side menu component</h2>
+      <div class="example example-images design-example">
+        <div class="nhsuk-grid-row">
+          {% include "includes/components/side-menu.html" %}
+        </div>
+      </div>
+
+      <h2 class="nhsuk-heading-m" id="example-component">Side menu with counters</h2>
+      <div class="example example-images design-example">
+        <div class="nhsuk-grid-row">
+          {% include "includes/components/side-menu-counters.html" %}
+        </div>
+      </div>
+
+      <h2 class="nhsuk-heading-m" id="example-component">Side menu with headings</h2>
+      <div class="example example-images design-example">
+        <div class="nhsuk-grid-row">
+          {% include "includes/components/side-menu-headings.html" %}
+        </div>
+      </div>
+
+
+      <h2 class="nhsuk-heading-m">When to use this component</h2>
+
+      <h2 class="nhsuk-heading-m">When not to use this component</h2>
+
+      <h2 class="nhsuk-heading-m">User research</h2>
+
+      <h2 class="nhsuk-heading-m">Services using this pattern</h2>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>Manage your service</li>
+      </ul>
+
+    </div>
+</div>
+
+{% endblock %}

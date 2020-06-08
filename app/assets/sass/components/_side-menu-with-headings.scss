@@ -1,0 +1,90 @@
+/*------------------------------------*\
+Side navigation
+\*------------------------------------*/
+// Component styles
+#side-menu-with-headings {
+.side-nav {
+    font-size: 19px;
+    float: left;
+    background: #E8EDEE;
+    width: 100%;
+    color: #005eb8;
+    overflow: hidden;
+    height: 100vh;
+    @media (min-width: 769px) {
+        width: 300px;
+        height: calc(100vh - 88px);
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    &.open {
+        height: auto;
+    }
+}
+.side-nav a {
+    text-decoration: none;
+    color: inherit;
+    
+    &:focus {
+        background: none;
+        outline: none;
+    }
+}
+// 2 classes to style menu headers and li text
+.list-head{
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 19px;
+    color: black;
+    
+}
+.list-text {
+    padding-left: 35px;
+}
+.side-nav__item {
+    border: 0px;
+    
+    font-size: 16px;
+    &:first-of-type {
+        padding-top: 0;
+        
+    }
+    a {
+        font-weight: 400;
+        display: block;
+        overflow: hidden;
+        padding: 15px 36px;
+        position: relative;
+    }
+ 
+    @media(min-width: 769px) {
+        display: block;
+        a {
+            padding: 12px 36px;
+        }
+        .counter {
+            top: 11px;
+        }
+    }
+    .open & {
+        display: block;
+    }
+    &.active {
+        display: block;
+        a {
+            background: #005eb8;
+            color: #ffffff;
+        }
+    }
+    a:hover {
+        background: #005eb8;
+        color: #ffffff;
+        &:after {
+            border: none;
+        }
+    }
+}
+}

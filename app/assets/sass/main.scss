@@ -10,8 +10,14 @@
 @import 'components/_panel-mys';
 @import 'components/_promo-cards-mys';
 @import 'components/_grid';
+@import 'components/_side-menu-mys';
+@import 'components/_side-menu-with-counters';
+@import 'components/_side-menu-with-headings';
 //@import 'includes/components/panel-confirmation';
 //@import 'components/related-nav';
+
+// Layouts
+@import 'layout/full-width';
 
 // All custom BSA component styles
 @import 'custom/_all';
