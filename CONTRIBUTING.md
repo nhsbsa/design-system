@@ -11,7 +11,7 @@ The NHSBSA Design System has an open [backlog](https://github.com/nhsbsa/design-
 Follow 3 steps to propose an idea or suggestion.
 
 ### 1. Share the work
-Talk about the pattern or component to the community. Share your work, as other teams might be working on the same thing. Gather feedback and examples from the community. We currently have a [confluence wiki] (https://bsa2468.atlassian.net/wiki/spaces/DES/pages/1597407233/Digital+patterns) showing the things we know about different common patterns or components. We're slowly moving all to open source so we can share our learning.
+Talk about the pattern or component to the community. Share your work, as other teams might be working on the same thing. Gather feedback and examples from the community. We currently have a [confluence wiki](https://bsa2468.atlassian.net/wiki/spaces/DES/pages/1597407233/Digital+patterns) showing the things we know about different common patterns or components. We're slowly moving all to open source so we can share our learning.
 
 ### 2. Check the backlog
 Check if the pattern or component is already on the backlog. If it is, please comment and post screenshots of your example. 
