@@ -1,71 +1,32 @@
-{% extends 'layouts/layout-bsa-design-system.html' %}
-
-{% block pageTitle %}
-NHSBSA design system - Home
-{% endblock %}
+{% extends "layouts/layout-bsa-design-system.html" %}
 
 {% block beforeContent %}
-<!--
-{{ breadcrumb({
-  items: [
-    {
-      href: "/diat/home",
-      text: "Home"
-    },
-    {
-      href: "/diat/guidance",
-      text: "Guidance and tools"
-    }
-  ],
-      href: "/diat/design-system",
-      text: "Design system"
-}) }}
--->
-
-{% endblock %}
-
-
-
-
-{% block content %}
-
-<div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-one-third">
-        <div class="article-section-nav-outer-wrapper">
-            <div id="sticky-nav">
-                <div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
-                    <div class="article-section-nav-wrapper">
-                        <div class="article-section-nav">
-                            <nav id="toc" class="js-toc-list toc__list">
-                                <h2>Design</h2>
-                                <ol class="article-section-nav__list">
-                                    <li>
-                                        <a href="/design-system/patterns">Patterns</a>
-                                    </li>
-                                    <li>
-                                        <a href="/design-system/components">Components</a>
-                                    </li>
-                                    <li>
-                                        <a href="/design-system/styles">Styles</a>
-                                    </li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
+    <section class="nhsuk-hero">
+        <div class="nhsuk-width-container nhsuk-hero--border app-width-container">
+        <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-three-quarters">
+                <div class="nhsuk-hero__wrapper app-hero__wrapper">
+                    <h1 class="nhsuk-u-margin-bottom-4">Design and build digital services using NHSBSA components, patterns and styles</h1>
+                    <p class="nhsuk-body-l">Use this design system to make your service consistent with NHS Business Services Authority.</p>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="nhsuk-grid-column-two-thirds">
-        <h1>Patterns, components and styles for NHSBSA services</h1>
-        <div id="about" class="article-section">
-            <p class="nhsuk-body-l">This design system is for everyone. It's purpose is to extend the NHS.UK Design System with work specific to the NHSBSA. Learn from the research and experience of other service teams and avoid repeating work that has already been done.</p>
-
-            <p>Any work which would benefit teams across government will be contributed to the <a href="https://beta.nhs.uk/service-manual/styles-components-patterns">NHS.UK system</a>.</p>
-
         </div>
-    </div>
+    </section>
+{% endblock %}
 
-</div>
+{% block content %}
+    <section class="nhsuk-section-break--l">
+        <div class="nhsuk-width-container app-width-container">
+            <div class="nhsuk-grid-row">
+                <div class="nhsuk-grid-column-three-quarters">
+                    <h2 class="nhsuk-heading-l">NHSBSA design system</h1>
+                    <p>This design system is for everyone. It's purpose is to extend the NHS.UK Design System with work specific to the NHSBSA. Learn from the research and experience of other service teams and avoid repeating work that has already been done.</p>
+                    <hr>
+                    <h2 class="nhsuk-heading-l">Support</h2>
+                    <p>Any work which would benefit the NHS Business Services Authority and across government will be contributed to the <a href="https://service-manual.nhs.uk/">NHS digital service manual</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock %}
